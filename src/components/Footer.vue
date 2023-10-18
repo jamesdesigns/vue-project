@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="logo">Your Logo</div>
-    <nav>
+    <div class="logo">UX Pays</div>
+    <nav class="right-element">
       <router-link to="/terms">Terms</router-link>
       <router-link to="/privacy">Privacy</router-link>
       <router-link to="/contact">Contact</router-link>
@@ -11,5 +11,15 @@
 
 <style scoped>
 /* Add your CSS styling here */
-footer { display: flex; }
+footer { 
+  display: flex; 
+  justify-content: space-between; 
+}
+.logo {
+  align-self: flex-start; /* Align the left element to the start (left) */
+}
+.right-element {
+  display: flex;
+      justify-content: flex-end; /* Align the right elements to the end (right) */
+}
 </style>
