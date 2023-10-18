@@ -21,4 +21,7 @@
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
     }
+    nav { 
+      height: 25px; 
+      }
 </style>

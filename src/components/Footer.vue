@@ -14,12 +14,13 @@
 footer { 
   display: flex; 
   justify-content: space-between; 
+  padding-bottom: 30px 0;
 }
 .logo {
   align-self: flex-start; /* Align the left element to the start (left) */
 }
 .right-element {
   display: flex;
-      justify-content: flex-end; /* Align the right elements to the end (right) */
+  justify-content: flex-end; /* Align the right elements to the end (right) */
 }
 </style>
