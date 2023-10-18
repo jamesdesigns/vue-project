@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="logo">UX Pays</div>
+    <div class="logo">Get Started</div>
     <nav class="right-element">
       <router-link to="/terms">Terms</router-link>
       <router-link to="/privacy">Privacy</router-link>
