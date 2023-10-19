@@ -2,9 +2,8 @@
   <footer>
     <div class="logo">Get Started</div>
     <nav class="right-element">
-      <router-link to="/terms">Terms</router-link>
-      <router-link to="/privacy">Privacy</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/terms" class="footer-nav-link-1">Terms</router-link>
+      <router-link to="/privacy"  class="footer-nav-link-2">Privacy</router-link>
     </nav>
   </footer>
 </template>
@@ -23,4 +22,6 @@ footer {
   display: flex;
   justify-content: flex-end; /* Align the right elements to the end (right) */
 }
+.right-element .footer-nav-link-1{ margin: 0 25px;}
+.right-element .footer-nav-link-2 { margin: 0 0 0 25px;}
 </style>

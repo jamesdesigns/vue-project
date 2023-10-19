@@ -5,7 +5,7 @@
       <button>Download E-book</button>
     </div>
     <div class="hero-image">
-      <img src="../assets/logo.svg" alt="Image of E-book" width="200" />
+      <!-- <img src="../assets/logo.svg" alt="Image of E-book" width="200" /> -->
     </div>
   </section>
 </template>
@@ -31,6 +31,6 @@
     margin-bottom: 30px;
     cursor: pointer;
   }
-  .large-text { font-size: 4rem; font-weight: bold; }
+  .large-text { font-size: 5rem; font-weight: bold; }
 
 </style>
