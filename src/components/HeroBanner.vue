@@ -32,6 +32,16 @@
     border: none;
     margin-bottom: 30px;
     cursor: pointer;
+    -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+  }
+  button:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    animation: 3s ease-in 1s;
+    background-color:#000428;
   }
   .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
 
