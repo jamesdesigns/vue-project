@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="large-text">Get Hired</h1>
-      <p></p>
+      <p class="intro">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive Ebook – your ultimate guide to landing that dream job!</p>
       <button>Download E-book</button>
     </div>
     <div class="hero-image">
@@ -22,6 +22,7 @@
     width: 100%;
   }
   .hero-content { text-align: center;}
+  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-bottom: 30px;line-height: 1.3;}
   button { 
     padding: 20px 50px; 
     border-radius: 50px;
