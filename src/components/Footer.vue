@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="logo">Get Started</div>
+    <div class="logo">Work by James Hooper</div>
     <nav class="right-element">
       <router-link to="/terms" class="footer-nav-link-1">Terms</router-link>
       <router-link to="/privacy"  class="footer-nav-link-2">Privacy</router-link>
@@ -17,11 +17,12 @@ footer {
 }
 .logo {
   align-self: flex-start; /* Align the left element to the start (left) */
+  color: white;
 }
 .right-element {
   display: flex;
   justify-content: flex-end; /* Align the right elements to the end (right) */
 }
-.right-element .footer-nav-link-1{ margin: 0 25px;}
-.right-element .footer-nav-link-2 { margin: 0 0 0 25px;}
+.right-element .footer-nav-link-1{ margin: 0 25px;color:white;}
+.right-element .footer-nav-link-2 { margin: 0 0 0 25px;color:white;}
 </style>

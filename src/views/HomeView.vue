@@ -25,4 +25,5 @@ export default {
 
 <style scoped>
 /* Add your CSS styling here */
+
 </style>
