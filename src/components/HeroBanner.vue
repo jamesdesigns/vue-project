@@ -33,6 +33,6 @@
     margin-bottom: 30px;
     cursor: pointer;
   }
-  .large-text { font-size: 5rem; font-weight: bold;color:white; }
+  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
 
 </style>
