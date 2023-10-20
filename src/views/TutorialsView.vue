@@ -1,7 +1,9 @@
 <template>
+  <Header />
   <div class="tutorials">
     <h1>UX/UI Tutorials</h1>
   </div>
+  <Footer />
 </template>
 
 <style>
@@ -15,3 +17,15 @@
   }
 }
 </style>
+
+<script>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
