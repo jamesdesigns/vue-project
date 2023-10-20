@@ -3,6 +3,7 @@
     <div class="logo">UX Pays</div>
     <nav class="right-element">
       <router-link to="/" class="nav-link-1">Home</router-link>
+      <router-link to="/tutorials" class="nav-link-1">Tutorials</router-link>
       <router-link to="/about" class="nav-link-2">About</router-link>
       <router-link to="/contact" class="nav-link-3">Contact</router-link>
     </nav>
