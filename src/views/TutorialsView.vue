@@ -7,15 +7,7 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  /* .tutorials {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  } */
-}
+
 h1 { color: white;text-align: center;font-size: 3.5rem}
 .tutorials {
   display: flex;

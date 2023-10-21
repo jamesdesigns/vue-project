@@ -1,23 +1,20 @@
 <template>
-  <div  class="contact">
   <Header />
-  <div>
+  <div   class="contact">
     <h1>Hi! It's nice to meet you.</h1>
   </div>
   <Footer />
-</div>
+
 </template>
 
 <style>
-/* @media (min-width: 1024px) { */
   .contact {
-    min-height: 100vh;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     color: white;
+    height: 90vh;
   }
-/* } */
 </style>
 
 <script>
