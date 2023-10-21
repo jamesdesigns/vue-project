@@ -3,7 +3,11 @@
     <div class="hero-content">
       <h1 class="large-text">Get Hired</h1>
       <p class="intro">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
-      <button>Download eBook</button>
+      
+      <div class="cta-section">
+        <button>Download FREE eBook</button>
+        <button class="orange-cta">Buy UX Template $3.99</button>
+      </div>
     </div>
     <div class="hero-image">
       <!-- <img src="../assets/logo.svg" alt="Image of E-book" width="200" /> -->
@@ -32,7 +36,7 @@ body {
     border-radius: 50px;
     background-color: #061161;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     border: none;
     margin-bottom: 30px;
     cursor: pointer;
@@ -40,6 +44,8 @@ body {
     -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
     box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
   }
+  .orange-cta {margin-left: 30px; background-color: orange; color: black;font-weight:500;}
+  .orange-cta:hover { background-color: rgb(247, 215, 155);}
   button:hover {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -48,5 +54,7 @@ body {
     background-color:#000428;
   }
   .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
-
+  @media only screen and (max-width: 767px) {
+    .orange-cta { margin-left: 0; }
+}
 </style>
