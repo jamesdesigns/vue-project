@@ -8,14 +8,22 @@
 
 <style>
 @media (min-width: 1024px) {
-  .tutorials {
+  /* .tutorials {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-  }
+  } */
 }
+h1 { color: white;text-align: center;font-size: 3.5rem}
+.tutorials {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 90vh;
+  }
 </style>
 
 <script>
