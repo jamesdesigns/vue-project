@@ -2,10 +2,10 @@
   <header>
     <div class="logo">UX Pays</div>
     <nav class="right-element">
-      <router-link to="/" class="nav-link-1">Home</router-link>
-      <router-link to="/tutorials" class="nav-link-1">Tutorials</router-link>
-      <router-link to="/about" class="nav-link-2">About</router-link>
-      <router-link to="/contact" class="nav-link-3">Contact</router-link>
+      <router-link to="/" class="btn nav-link-1">Home</router-link>
+      <router-link to="/tutorials" class="btn nav-link-1">Tutorials</router-link>
+      <router-link to="/about" class="btn nav-link-2">About</router-link>
+      <router-link to="/contact" class="btn nav-link-3">Contact</router-link>
     </nav>
   </header>
 </template>
@@ -17,18 +17,26 @@
     justify-content: space-between; 
     width: 100%;
     color: white;
+    padding-top: 4px;
     }
     .logo {  align-self: flex-start; /* Align the left element to the start (left) */ 
     font-size: 1.25rem;
     font-weight: bold;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+ 
     }
     .right-element {   
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
     }
     .right-element .nav-link-1,
-    .right-element .nav-link-2 { margin: 0 25px; color: white; font-size: 1.05rem; font-weight: 600; }
-    .right-element .nav-link-3 { margin: 0 0 0 25px; color: white; font-size: 1.05rem; font-weight: 600; }
+    .right-element .nav-link-2 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
+    .right-element .nav-link-3 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
     nav { 
       height: 25px;
       }

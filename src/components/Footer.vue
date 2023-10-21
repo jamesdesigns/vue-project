@@ -23,6 +23,6 @@ footer {
   display: flex;
   justify-content: flex-end; /* Align the right elements to the end (right) */
 }
-.right-element .footer-nav-link-1{ margin: 0 25px;color:white;}
-.right-element .footer-nav-link-2 { margin: 0 0 0 25px;color:white;}
+.right-element .footer-nav-link-1{ margin: 0 20px;color:white;}
+.right-element .footer-nav-link-2 { margin: 0 0 0 05px;color:white;}
 </style>
