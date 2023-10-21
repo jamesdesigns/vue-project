@@ -1,8 +1,7 @@
 <template>
   <header>
-    <div class="logo">UX Pays</div>
+    <router-link to="/" class="logo">UX Pays</router-link>
     <nav class="right-element">
-      <router-link to="/" class="btn nav-link-1">Home</router-link>
       <router-link to="/tutorials" class="btn nav-link-1">Tutorials</router-link>
       <router-link to="/about" class="btn nav-link-2">About</router-link>
       <router-link to="/contact" class="btn nav-link-3">Contact</router-link>
@@ -22,6 +21,7 @@
     .logo {  align-self: flex-start; /* Align the left element to the start (left) */ 
     font-size: 1.25rem;
     font-weight: bold;
+    color: white;
     }
     .btn {
       display: flex;
