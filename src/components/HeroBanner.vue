@@ -2,8 +2,8 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="large-text">Get Hired</h1>
-      <p class="intro">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive Ebook – your ultimate guide to landing that dream job!</p>
-      <button>Download E-book</button>
+      <p class="intro">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
+      <button>Download eBook</button>
     </div>
     <div class="hero-image">
       <!-- <img src="../assets/logo.svg" alt="Image of E-book" width="200" /> -->
@@ -13,6 +13,10 @@
 
 <style scoped>
 /* Add your CSS styling here */
+body {
+  font-family: 'Roboto', sans-serif; /* Use the font name specified in Google Fonts */
+}
+
   .hero { 
     display: flex;
     flex-direction:column;

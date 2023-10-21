@@ -24,6 +24,10 @@ export default {
 </script>
 
 <style scoped>
+body {
+  font-family: 'Roboto', sans-serif; /* Use the font name specified in Google Fonts */
+}
+
 /* Add your CSS styling here */
 
 </style>

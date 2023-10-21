@@ -7,6 +7,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+body {
+  font-family: 'Roboto', sans-serif; /* Use the font name specified in Google Fonts */
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
