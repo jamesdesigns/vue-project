@@ -45,7 +45,7 @@ body {
     box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
   }
   .orange-cta {margin-left: 30px; background-color: orange; color: black;font-weight:500;}
-  .orange-cta:hover { background-color: rgb(247, 215, 155);}
+  .orange-cta:hover { background-color: rgb(255, 255, 255);}
   button:hover {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
