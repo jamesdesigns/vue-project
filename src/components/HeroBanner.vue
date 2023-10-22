@@ -6,7 +6,7 @@
       
       <div class="cta-section">
         <button>Download FREE eBook</button>
-        <button class="orange-cta">Buy UX Template $3.99</button>
+        <button class="orange-cta">Buy UX Template $9.99</button>
       </div>
     </div>
     <div class="hero-image">
@@ -30,9 +30,9 @@ body {
     width: 100%;
   }
   .hero-content { text-align: center;}
-  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-bottom: 30px;line-height: 1.3;}
+  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-bottom: 35px;line-height: 1.3;}
   button { 
-    padding: 20px 50px; 
+    padding: 20px 40px; 
     border-radius: 50px;
     background-color: #061161;
     color: white;
@@ -53,7 +53,7 @@ body {
     animation: 3s ease-in 1s;
     background-color:#000428;
   }
-  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
+  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 25px; }
   @media only screen and (max-width: 767px) {
     .orange-cta { margin-left: 0; }
 }
