@@ -58,6 +58,42 @@
       src="https://www.youtube.com/embed/VIDEO_ID"
       frameborder="0"
     ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      frameborder="0"
+    ></iframe>
   </div>
   <Footer />
 </template>
@@ -71,7 +107,7 @@ grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom:5%; /* 16:9 aspect ratio */
   height: auto;
   overflow: hidden;
   width: 100%;
@@ -86,7 +122,7 @@ grid-row-gap: 0px;
   margin-bottom: 45px;
 }
 
-h1 { color: white;text-align: center;font-size: 3.5rem; line-height: 1.25;}
+h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25;}
 .tutorials {
   display: flex;
     align-items: center;
@@ -95,6 +131,16 @@ h1 { color: white;text-align: center;font-size: 3.5rem; line-height: 1.25;}
     /* height: 90vh; */
   }
   .tutorials h1 { padding: 50px 0 30px}
+
+  @media only screen and (max-width: 1000px) {
+    .video-container { 
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+}
 </style>
 
 <script>

@@ -8,7 +8,7 @@
 
 <style>
 
-h1 { color: white;text-align: center;font-size: 3.5rem; line-height: 1.25;}
+h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25;}
 .templates {
   display: flex;
     align-items: center;
