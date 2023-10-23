@@ -34,7 +34,8 @@ body {
   button { 
     padding: 20px 40px; 
     border-radius: 50px;
-    background-color: #061161;
+    /* background-color: #061161; */
+    background-color: #1488CC;
     color: white;
     font-size: 1.15rem;
     border: none;
@@ -51,7 +52,8 @@ body {
     -moz-box-shadow: none;
     box-shadow: none;
     animation: 3s ease-in 1s;
-    background-color:#000428;
+    background-color:#ffffff;
+    color: black;
   }
   .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 25px; }
   @media only screen and (max-width: 767px) {
