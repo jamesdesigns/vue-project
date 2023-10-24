@@ -4,7 +4,8 @@
     <h1>UX/UI Tutorials</h1>
   </div>
   <div class="video-container">
-    <iframe
+    <VideoGallery />
+    <!-- <iframe
       width="360"
       height="250"
       src="https://www.youtube.com/embed/VIDEO_ID"
@@ -93,7 +94,7 @@
       height="250"
       src="https://www.youtube.com/embed/VIDEO_ID"
       frameborder="0"
-    ></iframe>
+    ></iframe> -->
   </div>
   <Footer />
 </template>
@@ -101,16 +102,7 @@
 <style scoped>
 
 .video-container {
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-  position: relative;
-  padding-bottom:5%; /* 16:9 aspect ratio */
-  height: auto;
-  overflow: hidden;
-  width: 100%;
+
 }
 
 .video-container iframe {
@@ -146,10 +138,12 @@ h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25;}
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import VideoGallery from '@/components/VideoGallery.vue';
 
 export default {
   components: {
     Header,
+    VideoGallery,
     Footer
   },
   name: 'VideoPlayer'
