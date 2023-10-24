@@ -19,21 +19,21 @@ export default {
     return {
       videos: [
         // Add video URLs or other information here
-        { url: 'https://example.com/video1.mp4', title: 'Video 1' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 2' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 3' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 4' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 5' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 6' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 7' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 8' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 9' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 10' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 11' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 12' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 13' },
-        { url: 'https://example.com/video2.mp4', title: 'Video 14' },
-        { url: 'https://example.com/video1.mp4', title: 'Video 15' }
+        { url: 'https://example.com/video1.mp4', title: 'User Research' },
+        { url: 'https://example.com/video2.mp4', title: 'Information Architecture' },
+        { url: 'https://example.com/video1.mp4', title: 'User Personas' },
+        { url: 'https://example.com/video2.mp4', title: 'User Journey Mapping' },
+        { url: 'https://example.com/video1.mp4', title: 'Visual Design' },
+        { url: 'https://example.com/video2.mp4', title: 'Prototyping' },
+        { url: 'https://example.com/video1.mp4', title: 'Interaction Design' },
+        { url: 'https://example.com/video2.mp4', title: 'Responsive Design' },
+        { url: 'https://example.com/video1.mp4', title: 'Cognitive Psychology' },
+        { url: 'https://example.com/video2.mp4', title: 'Emotional Design' },
+        { url: 'https://example.com/video1.mp4', title: 'Usability' },
+        { url: 'https://example.com/video2.mp4', title: 'Business Understanding' },
+        { url: 'https://example.com/video1.mp4', title: 'Market Research' },
+        { url: 'https://example.com/video2.mp4', title: 'Collaboration' },
+        { url: 'https://example.com/video1.mp4', title: 'Ethics and Legal Consideration' }
       ]
     };
   }
@@ -42,13 +42,11 @@ export default {
 
 <style scoped>
 .video-gallery {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   position: relative;
   padding-bottom:5%; 
   height: auto;

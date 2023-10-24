@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 .video-item {
+  color: white;
   margin: 10px;
   max-width: 300px;
 }
