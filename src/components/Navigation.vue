@@ -25,10 +25,8 @@ export default {
 </script>
 
 <style scoped>
-/* Add your CSS styling here */
 .mobile-menu-button {
   display: block; /* Show the button on all screen sizes */
-  // Add styles for the button, e.g., background color, icon size, etc.
 }
 
 ul {
@@ -39,10 +37,7 @@ ul {
 ul.show-menu {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the items vertically */
-  /* Add other styles for the open menu */
+  align-items: center; 
 }
-
-/* Add more styles for your navigation links as needed */
 
 </style>

@@ -16,8 +16,8 @@ export default {
     return {
       templates: [
         {
-          name: 'Template 1',
-          description: 'Template 1',
+          name: 'UI Buttons',
+          description: '$4.99',
           imageUrl: 'template1.jpg',
         },
         {
@@ -32,19 +32,34 @@ export default {
         },
         {
           name: 'Template 4',
-          description: 'Template 1',
+          description: 'Template 4',
           imageUrl: 'template1.jpg',
         },
         {
           name: 'Template 5',
-          description: 'Template 2',
+          description: 'Template 5',
           imageUrl: 'template2.jpg',
         },
         {
           name: 'Template 6',
-          description: 'Template 3',
+          description: 'Template 6',
           imageUrl: 'template3.jpg',
-        }
+        },
+        {
+          name: 'Template 7',
+          description: 'Template 7',
+          imageUrl: 'template3.jpg',
+        },
+        {
+          name: 'Template 8',
+          description: 'Template 8',
+          imageUrl: 'template1.jpg',
+        },
+        {
+          name: 'Template 9',
+          description: 'Template 9',
+          imageUrl: 'template2.jpg',
+        },
       ],
     };
   },
@@ -69,12 +84,23 @@ export default {
   width: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+    .template-gallery { 
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+}
+
 .template-size { min-width: 250px; height: auto;}
 
 .template-item {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 30px;
+  background-color: white;
 }
 
 .template-item img {
