@@ -8,14 +8,8 @@
 </template>
 
 <style>
-
-h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25;}
+h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25; padding: 50px 0 30px;}
 .templates {
-  /* display: flex;
-  flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white; */
     height: 90vh;
   }
   

@@ -74,12 +74,12 @@ export default {
 .template-item {
   border: 1px solid #ccc;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .template-item img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 2%;
 }
 
 .template-details {
