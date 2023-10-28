@@ -19,7 +19,7 @@ export default {
     return {
       videos: [
         // Add video URLs or other information here
-        { url: 'https://example.com/video1.mp4', title: 'User Research' },
+        { url: 'https://www.youtube.com/watch?v=TJg3lFaSlSI', title: 'User Research' },
         { url: 'https://example.com/video2.mp4', title: 'Information Architecture' },
         { url: 'https://example.com/video1.mp4', title: 'User Personas' },
         { url: 'https://example.com/video2.mp4', title: 'User Journey Mapping' },
@@ -47,6 +47,7 @@ export default {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-items: center;
   position: relative;
   padding-bottom:5%; 
   height: auto;
