@@ -18,47 +18,47 @@ export default {
         {
           name: 'UI Buttons',
           description: '$4.99',
-          imageUrl: 'template1.jpg',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 2',
-          description: 'Template 2',
-          imageUrl: 'template2.jpg',
+          name: 'UI Mobile Template',
+          description: '$5.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 3',
-          description: 'Template 3',
-          imageUrl: 'template3.jpg',
+          name: 'UI Website Template',
+          description: '$5.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 4',
-          description: 'Template 4',
-          imageUrl: 'template1.jpg',
+          name: 'UX/UI Research Tempalte',
+          description: '$3.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 5',
-          description: 'Template 5',
-          imageUrl: 'template2.jpg',
+          name: 'UI Navigation Template',
+          description: '$1.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 6',
-          description: 'Template 6',
-          imageUrl: 'template3.jpg',
+          name: 'UI Dashboard Template',
+          description: '$5.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 7',
-          description: 'Template 7',
-          imageUrl: 'template3.jpg',
+          name: 'Ecommerce Template',
+          description: '$9.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 8',
-          description: 'Template 8',
-          imageUrl: 'template1.jpg',
+          name: 'Power Point Template',
+          description: '$2.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
         {
-          name: 'Template 9',
-          description: 'Template 9',
-          imageUrl: 'template2.jpg',
+          name: 'UI Widget Template',
+          description: '$3.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
       ],
     };
@@ -98,13 +98,14 @@ export default {
 
 .template-item {
   border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 30px;
   background-color: white;
 }
 
 .template-item img {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
