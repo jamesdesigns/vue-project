@@ -68,9 +68,6 @@ export default {
 
 <style scoped>
 .template-gallery {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
