@@ -1,11 +1,13 @@
 <template>
   <div class="template-gallery">
     <div v-for="(template, index) in templates" :key="index" class="template-item">
-      <img class="template-size" :src="template.imageUrl" alt="Template" />
-      <div class="template-details">
-        <h3>{{ template.name }}</h3>
-        <p>{{ template.description }}</p>
-      </div>
+      <a href="#" target="_blamk">
+        <img class="template-size" :src="template.imageUrl" alt="Template" />
+        <div class="template-details">
+          <h3>{{ template.name }}</h3>
+          <p>{{ template.description }}</p>
+        </div>
+      </a>
     </div>
   </div>
 </template>
