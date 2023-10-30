@@ -62,6 +62,21 @@ export default {
           description: '$3.99',
           imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
         },
+        {
+          name: 'UI Scrolling Gallery',
+          description: '$9.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
+        },
+        {
+          name: 'UI Dashboard',
+          description: '$2.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
+        },
+        {
+          name: 'Real Estate Website',
+          description: '$3.99',
+          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flearnworthy.net%2Fwp-content%2Fuploads%2F2019%2F11%2FBest-iOS-Libraries-to-Make-Your-Apps-Ui-Really-Pop.png&f=1&nofb=1&ipt=3968944ceb32eee237ba1d382716d528d61bfe1d0f018e0be42f644aba2e1964&ipo=images',
+        }
       ],
     };
   },
@@ -110,5 +125,6 @@ export default {
 
 .template-details {
   text-align: center;
+  color: black;
 }
 </style>
