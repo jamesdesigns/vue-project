@@ -55,7 +55,7 @@ body {
     background-color:#ffffff;
     color: black;
   }
-  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 25px; }
+  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
   @media only screen and (max-width: 767px) {
     .orange-cta { margin-left: 0; }
 }

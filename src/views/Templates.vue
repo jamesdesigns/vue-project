@@ -8,7 +8,7 @@
 </template>
 
 <style>
-h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25; padding: 50px 0 45px;}
+h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25; padding: 50px 0 30px;}
 .templates {
     height: auto;
   }
