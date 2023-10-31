@@ -96,6 +96,7 @@ export default {
   height: auto;
   overflow: hidden;
   width: 100%;
+  margin-top:30px;
 }
 
 @media only screen and (max-width: 1000px) {
