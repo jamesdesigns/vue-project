@@ -22,7 +22,7 @@ h1 { color: white;text-align: center;font-size: 2.5rem; line-height: 1.25;}
     justify-content: center;
     color: white;
   }
-  .tutorials h1 { padding: 50px 0 30px}
+  .tutorials h1 { padding: 50px 0 0;}
 
   @media only screen and (max-width: 1000px) {
     .video-container { 

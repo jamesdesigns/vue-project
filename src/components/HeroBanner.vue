@@ -30,7 +30,7 @@ body {
     width: 100%;
   }
   .hero-content { text-align: center;}
-  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-bottom: 35px;line-height: 1.3;}
+  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:30px;margin-bottom: 35px;line-height: 1.3;}
   button { 
     padding: 20px 40px; 
     border-radius: 50px;
@@ -55,7 +55,7 @@ body {
     background-color:#ffffff;
     color: black;
   }
-  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1;margin-bottom: 30px; }
+  .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1; }
   @media only screen and (max-width: 767px) {
     .orange-cta { margin-left: 0; }
 }
