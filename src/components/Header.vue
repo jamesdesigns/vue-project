@@ -41,4 +41,11 @@
     nav { 
       height: 25px;
       }
+
+      @media only screen and (max-width: 767px) {
+        .right-element { 
+          display: none; /* changes this nav to a hamburger icon */
+          flex-direction: column; 
+          height: 100%; }
+    }
 </style>
