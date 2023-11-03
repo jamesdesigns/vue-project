@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <div class="hero-content">
-      <h1 class="large-text">Get Hired</h1>
+      <h1 class="large-text" ref="box">Get Hired</h1>
       <p class="intro">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
       
       <div class="cta-section">
@@ -60,3 +60,15 @@ body {
     .orange-cta { margin-left: 0; }
 }
 </style>
+
+<script> 
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const { box } = this.$refs
+    const timeline = new TimelineLite() 
+    
+    timeline.to(box, 1, { y: -50, duration:4, scale: 1.25 }) 
+  } 
+} 
+</script>

@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 import Header from "@/components/Header.vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
