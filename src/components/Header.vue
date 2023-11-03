@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link to="/" class="logo">UX Pays</router-link>
+    <router-link to="/" class="logo">UX Pays &nbsp;&nbsp;<span class="small-tagline">Learn more. Earn more.</span></router-link>
     <nav class="right-element">
       <router-link to="/tutorials" class="btn nav-link-1">Tutorials</router-link>
       <router-link to="/templates" class="btn nav-link-1">Templates</router-link>
@@ -24,6 +24,7 @@
     font-weight: bold;
     color: white;
     }
+    .small-tagline { font-size: .9rem; }
     .btn {
       display: flex;
       align-items: center;
