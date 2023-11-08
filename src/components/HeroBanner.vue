@@ -68,7 +68,7 @@ export default {
     const { box } = this.$refs
     const timeline = new TimelineLite() 
     
-    timeline.to(box, 1, { y: -20, duration:1, scale: 1.25 }) 
+    timeline.to(box, 1, { y: -20, duration:.5, scale: 1.25 }) 
   } 
 } 
 </script>
