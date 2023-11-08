@@ -54,6 +54,7 @@ export default {
 .viewport {
   overflow: hidden;
   width: 600px; /* Adjust this to match the width of your viewport */
+  margin-bottom: 90px;
 }
 
 .carousel-inner {
@@ -64,6 +65,9 @@ export default {
 .slide {
   flex: 0 0 auto;
   margin-right: 10px; /* Adjust as needed for spacing between slides */
+  width: 200px;
+  height: 200px;
+  background-color: white;
 }
 
 img {
