@@ -53,7 +53,7 @@ export default {
 
 .viewport {
   overflow: hidden;
-  width: 600px; /* Adjust this to match the width of your viewport */
+  width: 700px; /* Adjust this to match the width of your viewport */
   margin-bottom: 90px;
 }
 
@@ -68,6 +68,7 @@ export default {
   width: 200px;
   height: 200px;
   background-color: white;
+  margin: 0 15px;
 }
 
 img {

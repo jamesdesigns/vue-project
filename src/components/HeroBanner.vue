@@ -26,7 +26,7 @@ body {
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 100vh;
     width: 100%;
   }
   .hero-content { text-align: center;}
