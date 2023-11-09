@@ -1,6 +1,6 @@
 <template>
   <div class="carousel">
-    <button @click="prev">Previous</button>
+    <button class="previous-btn" @click="prev">Previous</button>
     <div class="viewport">
       <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
         <div v-for="(item, index) in items" :key="index" class="slide">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <button @click="next">Next</button>
+    <button class="next-btn" @click="next">Next</button>
   </div>
 </template>
 
@@ -77,6 +77,9 @@ export default {
     -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
     box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
 }
+
+.previous-btn { margin-right: 40px;}
+.next-btn { margin-left: 50px; }
 
 img {
   max-width: 100%;
