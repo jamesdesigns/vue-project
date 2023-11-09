@@ -73,6 +73,9 @@ export default {
   background-color: white;
   margin: 0 15px;
   border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
 }
 
 img {
