@@ -50,7 +50,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
