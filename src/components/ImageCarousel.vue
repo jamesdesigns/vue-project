@@ -23,6 +23,9 @@ export default {
         { url: 'image2.jpg' },
         { url: 'image3.jpg' },
         { url: 'image4.jpg' },
+        { url: 'image5.jpg' },
+        { url: 'image3.jpg' },
+        { url: 'image4.jpg' },
         { url: 'image5.jpg' }
       ]
     };
@@ -69,6 +72,7 @@ export default {
   height: 200px;
   background-color: white;
   margin: 0 15px;
+  border-radius: 15px;
 }
 
 img {
