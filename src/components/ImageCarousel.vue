@@ -57,7 +57,7 @@ export default {
 .viewport {
   overflow: hidden;
   width: 700px; /* Adjust this to match the width of your viewport */
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .carousel-inner {
