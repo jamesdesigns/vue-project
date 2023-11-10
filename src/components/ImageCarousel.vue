@@ -66,6 +66,7 @@ export default {
 }
 
 .slide {
+  display: inline-flex;
   flex: 0 0 auto;
   margin-right: 10px; /* Adjust as needed for spacing between slides */
   width: 200px;
