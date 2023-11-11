@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="logo">Learn more. Earn more.</div>
+    <div class="logo">© 2023 UXpays. All Rights Reserved.</div>
     <nav class="footer right-element">
       <router-link to="/terms" class="footer-nav-link-1">Terms</router-link>
       <router-link to="/privacy"  class="footer-nav-link-2">Privacy</router-link>
