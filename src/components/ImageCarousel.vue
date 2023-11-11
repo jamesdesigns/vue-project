@@ -82,8 +82,8 @@ export default {
 }
 .slide-img { border-radius: 15px; height:100%;  }
 
-.previous-btn { margin-right: 40px;}
-.next-btn { margin-left: 50px; }
+.previous-btn { margin-right: 40px; margin-top: -90px;}
+.next-btn { margin-left: 50px; margin-top: -90px; }
 
 img {
   max-width: 100%;
