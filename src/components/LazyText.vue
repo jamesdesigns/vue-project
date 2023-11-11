@@ -46,7 +46,7 @@ p { padding-top: 15px;}
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
 }
 
-.lazy-component {  text-align: center; height: 500px;}
+.lazy-component {  text-align: center; height: 500px;padding:150px 0;}
 
 .lazy-component .fade-in {
   opacity: 1;
