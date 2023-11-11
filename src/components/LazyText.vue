@@ -1,7 +1,7 @@
 <template>
   <div ref="lazyComponent" class="lazy-component">
-    <h1 v-if="isVisible" class="fade-in">Lazy Loaded Heading</h1>
-    <p v-if="isVisible" class="fade-in">Lazy Loaded Paragraph</p>
+    <h1 v-if="isVisible" class="fade-in">Test your skills.</h1>
+    <p v-if="isVisible" class="fade-in">Learn more by applying your knowledge with interactive tests.</p>
   </div>
 </template>
 
@@ -40,12 +40,13 @@ export default {
 </script>
 
 <style scoped>
+p { padding-top: 15px;}
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
 }
 
-.lazy-component {  height: 500px;}
+.lazy-component {  text-align: center; height: 500px;}
 
 .lazy-component .fade-in {
   opacity: 1;

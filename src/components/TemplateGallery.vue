@@ -99,6 +99,18 @@ export default {
   margin-top:30px;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
+}
+
+.lazy-component {  height: 500px;}
+
+.lazy-component .fade-in {
+  opacity: 1;
+  color: white;
+}
+
 @media only screen and (max-width: 1000px) {
     .template-gallery { 
       display:flex;
