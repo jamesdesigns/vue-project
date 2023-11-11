@@ -45,7 +45,7 @@ export default {
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
 }
 
-.lazy-component { display: flex; align-content: center; align-items: center; height: 500px;}
+.lazy-component {  height: 500px;}
 
 .lazy-component .fade-in {
   opacity: 1;
