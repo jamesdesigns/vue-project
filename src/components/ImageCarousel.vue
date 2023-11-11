@@ -71,7 +71,7 @@ export default {
   display: flex;
   flex: 0 0 auto;
   margin-right: 10px; /* Adjust as needed for spacing between slides */
-  width: 200px;
+  width: 300px;
   height: auto;
   background-color: white;
   margin: 0 15px;
