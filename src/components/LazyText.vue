@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-p { padding-top: 15px;}
+p { padding-top: 15px; font-size: 1.25rem; }
 .large-text { font-size: 3rem; }
 .fade-in {
   opacity: 0;

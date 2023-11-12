@@ -56,8 +56,10 @@ body {
     color: black;
   }
   .large-text { font-size: 5rem; font-weight: bold;color:white;line-height: 1; }
+  .intro { font-size: 1.25rem; }
   @media only screen and (max-width: 767px) {
     .orange-cta { margin-left: 0; }
+    .large-text { font-size: 3rem; }
 }
 </style>
 
