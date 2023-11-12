@@ -115,7 +115,8 @@ img {
 }
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
+  transition: opacity 3s ease-in-out; /* Adjust the duration and easing function as needed */
+  transition-delay: 250ms;
 }
 
 .lazy-component {  text-align: center; height: 500px;padding:150px 0;}
@@ -125,3 +126,4 @@ img {
   color: white;
 }
 </style>
+

@@ -1,14 +1,14 @@
 <template>
   <div class="template-gallery">
-    <div v-for="(template, index) in templates" :key="index" class="template-item">
-      <a href="#" target="_blamk">
-        <img class="template-size" :src="template.imageUrl" alt="Template" />
-        <div class="template-details">
-          <h3>{{ template.name }}</h3>
-          <p>{{ template.description }}</p>
-        </div>
-      </a>
-    </div>
+      <div v-for="(template, index) in templates" :key="index" class="template-item">
+        <a href="#" target="_blank">
+          <img class="template-size" :src="template.imageUrl" alt="Template" />
+          <div class="template-details">
+            <h3>{{ template.name }}</h3>
+            <p>{{ template.description }}</p>
+          </div>
+        </a>
+      </div>
   </div>
 </template>
 
@@ -16,6 +16,7 @@
 export default {
   data() {
     return {
+      isVisible: false,
       templates: [
         {
           name: 'UI Buttons',
@@ -99,18 +100,6 @@ export default {
   margin-top:30px;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
-}
-
-.lazy-component {  height: 500px;}
-
-.lazy-component .fade-in {
-  opacity: 1;
-  color: white;
-}
-
 @media only screen and (max-width: 1000px) {
     .template-gallery { 
       display:flex;
@@ -140,4 +129,5 @@ export default {
   text-align: center;
   color: black;
 }
+
 </style>
