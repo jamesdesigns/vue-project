@@ -1,6 +1,6 @@
 <template>
   <div ref="lazyComponent" class="lazy-component">
-    <h1 v-if="isVisible" class="fade-in">Test your skills.</h1>
+    <h1 v-if="isVisible" class="fade-in large-text">Test your skills.</h1>
     <p v-if="isVisible" class="fade-in">Learn more by applying your knowledge with interactive tests.</p>
   </div>
 </template>
@@ -41,6 +41,7 @@ export default {
 
 <style scoped>
 p { padding-top: 15px;}
+.large-text { font-size: 3rem; }
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
