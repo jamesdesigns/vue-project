@@ -1,7 +1,7 @@
 <template>
-  <div class="carousel">
-    <button class="previous-btn" @click="prev">Previous</button>
-    <div class="viewport">
+  <div ref="lazyComponent" class="carousel fade-in  lazy-component">
+    <button v-if="isVisible" class="previous-btn" @click="prev">Previous</button>
+    <div v-if="isVisible" class="viewport">
       <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
         <div v-for="(item, index) in items" :key="index" class="slide">
           <a href="#">
@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <button class="next-btn" @click="next">Next</button>
+    <button v-if="isVisible" class="next-btn" @click="next">Next</button>
   </div>
 </template>
 
@@ -18,6 +18,7 @@
 export default {
   data() {
     return {
+      isVisible: false,
       currentIndex: 0,
       slideWidth: 300, // Adjust this to match the width of your individual slides
       items: [
@@ -42,8 +43,31 @@ export default {
       if (this.currentIndex < this.items.length - 3) {
         this.currentIndex++;
       }
-    }
-  }
+    },
+    observeElement() {
+      const options = {
+        rootMargin: '0px', // Adjust this margin as needed
+        threshold: 0.5, // Adjust this threshold as needed (0.5 means 50% of the element must be visible)
+      };
+
+      const observer = new IntersectionObserver(this.handleIntersection, options);
+      observer.observe(this.$refs.lazyComponent);
+    },
+    handleIntersection(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.isVisible = true;
+          entry.target.classList.remove('fade-in'); // Reset the fade-in animation for re-triggering
+        } else {
+          this.isVisible = false;
+        }
+      });
+    },
+  },
+  mounted() {
+    this.observeElement();
+  },
+
 };
 </script>
 
@@ -71,7 +95,7 @@ export default {
   display: flex;
   flex: 0 0 auto;
   margin-right: 10px; /* Adjust as needed for spacing between slides */
-  width: 300px;
+  width: 325px;
   height: auto;
   background-color: white;
   margin: 0 15px;
@@ -88,5 +112,16 @@ export default {
 img {
   max-width: 100%;
   height: auto;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing function as needed */
+}
+
+.lazy-component {  text-align: center; height: 500px;padding:150px 0;}
+
+.lazy-component .fade-in {
+  opacity: 1;
+  color: white;
 }
 </style>
