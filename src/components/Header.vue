@@ -30,9 +30,9 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
- 
+      border-radius: 35px;
     }
-    .btn:hover { background-color: white; opacity: 1; }
+    .btn:hover { background-color: white; opacity: 1; border-radius: 35px; }
     .right-element {   
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
@@ -44,7 +44,7 @@
     .nav-link-1:hover,
     .nav-link-2:hover,
     .nav-link-3:hover {
-      color: rgb(55, 55, 233);
+      color: #2f63ba;
     }
 
     nav { 
