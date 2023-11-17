@@ -32,6 +32,7 @@
       padding: 20px;
  
     }
+    .btn:hover { border-bottom: 2px solid white; background-color: none !important;}
     .right-element {   
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
