@@ -32,7 +32,7 @@
       padding: 20px;
  
     }
-    .btn:hover { border-bottom: 2px solid white; background-color: none !important;}
+    .btn:hover { background-color: white; opacity: 1; }
     .right-element {   
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
@@ -40,6 +40,13 @@
     .right-element .nav-link-1,
     .right-element .nav-link-2 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
     .right-element .nav-link-3 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
+
+    .nav-link-1:hover,
+    .nav-link-2:hover,
+    .nav-link-3:hover {
+      color: rgb(55, 55, 233);
+    }
+
     nav { 
       height: 25px;
       }
