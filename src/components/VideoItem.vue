@@ -23,3 +23,5 @@ export default {
   max-width: 300px;
 }
 </style>
+
+
