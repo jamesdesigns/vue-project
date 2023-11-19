@@ -6,14 +6,17 @@
       :key="index"
       :video="video"
     /> -->
+    <!-- <div v-for="videoTitle in videoTitles" :key="videoTitle"> -->
+
     <div v-for="videoId in videoIds" :key="videoId">
-
+     <!-- <div v-for="videoTitle in videoTitles" :key="videoTitle"> -->
       <div v-html="generateYouTubeEmbedCode(videoId)" class="video-embed"></div>
+      <h3 v-html="generateYouTubeTitle(videoTitle)"></h3>
+    <!-- </div> -->
+    </div> 
 
-    </div>
-    <!-- <div v-for="videoTitle in videoTitles" :key="videoTitle">
-      <div v-html="generateYouTubeTitle(videoTitle)"></div>
-    </div> -->
+    <!-- </div> -->
+
   </div>
 
 </template>
@@ -52,9 +55,9 @@ export default {
     },
     methods: {
       generateYouTubeEmbedCode(videoId,videoTitle) {
-      return `<iframe width="350" height="200" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe><br><h3>${videoTitle}</h3>`;
+      return `<iframe width="350" height="200" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe><br>`;
     },
-    generateYouTubeTitle(videoTitle) {
+      generateYouTubeTitle(videoTitle) {
       return `<h3>${videoTitle}</h3>`;
     },
   }
@@ -83,7 +86,7 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
+      margin: 30px auto 0;
     }
 }
 </style>
