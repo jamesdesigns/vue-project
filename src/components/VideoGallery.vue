@@ -8,12 +8,7 @@
 </template>
 
 <script>
-import VideoItem from './VideoItem.vue';
-
 export default {
-  components: {
-    VideoItem
-  },
   data() {
     return {
       videos: [
@@ -32,7 +27,7 @@ export default {
         { url: 'MkKr2Cc0BuM?si=wpAAbxKViT2xP8ZR', title: 'Business Understanding' },
         { url: 'ULWhr_2CP-g?si=JzpfkV7TY8yAl5Z2', title: 'Market Research' },
         { url: 'DwR0SZTBMTU?si=p54QB5dx8COMAcW_', title: 'Collaboration' },
-        { url: '8I3NTE4cn5s?si=bTItTFQX4Bumhogm', title: 'Ethics and Legal Consideration' }
+        { url: '8I3NTE4cn5s?si=bTItTFQX4Bumhogm', title: 'Ethics and Legal Consideration' },
       ]
   } 
     },
