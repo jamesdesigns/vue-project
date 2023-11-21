@@ -3,7 +3,6 @@
     <div class="hero-content">
       <h1 class="large-text" ref="box">Get Hired</h1>
       <p class="intro" ref="box2">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
-      
       <div class="cta-section">
         <button>Download FREE eBook</button>
         <button class="orange-cta">Buy UX Template $9.99</button>
@@ -16,11 +15,7 @@
 </template>
 
 <style scoped>
-/* Add your CSS styling here */
-body {
-  font-family: 'Roboto', sans-serif; /* Use the font name specified in Google Fonts */
-}
-
+  body { font-family: 'Roboto', sans-serif; }
   .hero { 
     display: flex;
     flex-direction:column;
@@ -34,7 +29,6 @@ body {
   button { 
     padding: 20px 40px; 
     border-radius: 50px;
-    /* background-color: #061161; */
     background-color: #1488CC;
     color: white;
     font-size: 1.15rem;
