@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style scoped>
+h3 { font-weight: bold; }
 .video-gallery {
   display: grid; 
   grid-template-columns: repeat(3, 1fr);
