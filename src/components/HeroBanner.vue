@@ -4,7 +4,7 @@
       <h1 class="large-text" ref="box">Get Hired</h1>
       <p class="intro" ref="box2">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
       <div class="cta-section">
-        <button>Download FREE eBook</button>
+        <button @click="downloadPDF">Download FREE eBook</button>
         <button class="orange-cta">Buy UX Template $9.99</button>
       </div>
     </div>
@@ -60,12 +60,35 @@
 
 <script> 
 import { TimelineLite } from 'gsap'
+import jsPDF from 'jspdf';
+
 export default { 
   mounted() { 
     const { box } = this.$refs
     const timeline = new TimelineLite() 
     
     timeline.to(box, 1, { y: -10, duration:.5, scale: 1.25 }) 
-  } 
+  },
+  methods: {
+    downloadPDF() {
+      // Create a new instance of jsPDF
+      const pdf = new jsPDF();
+
+      // Add content to the PDF (example: a simple text)
+      pdf.text('Hello, this is your PDF!', 10, 10);
+
+      // Save the PDF as a blob
+      const blob = pdf.output('blob');
+
+      // Create a download link and trigger the download
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'your_file_name.pdf';
+      link.click();
+
+      // Release the blob
+      URL.revokeObjectURL(link.href);
+    },
+  }, 
 } 
 </script>
