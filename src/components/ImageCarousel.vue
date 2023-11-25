@@ -12,9 +12,11 @@
     </div>
     <button v-if="isVisible" class="next-btn" @click="next">Next</button>
   </div>
+
 </template>
 
 <script>
+
 export default {
   data() {
     return {

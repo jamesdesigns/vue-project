@@ -25,7 +25,7 @@
     width: 100%;
   }
   .hero-content { text-align: center;}
-  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:30px;margin-bottom: 35px;line-height: 1.3;}
+  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:30px;margin-bottom: 45px;line-height: 1.3;}
   button { 
     padding: 20px 40px; 
     border-radius: 50px;
@@ -65,7 +65,7 @@ export default {
     const { box } = this.$refs
     const timeline = new TimelineLite() 
     
-    timeline.to(box, 1, { y: -20, duration:.5, scale: 1.25 }) 
+    timeline.to(box, 1, { y: -10, duration:.5, scale: 1.25 }) 
   } 
 } 
 </script>

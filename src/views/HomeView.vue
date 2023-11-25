@@ -18,6 +18,7 @@ import ImageCarousel from "@/components/ImageCarousel.vue";
 import LazyText from '@/components/LazyText.vue'; // Adjust the path accordingly
 import Footer from "@/components/Footer.vue";
 
+
 export default {
   components: {
     Header,
