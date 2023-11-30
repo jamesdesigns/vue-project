@@ -67,7 +67,7 @@ img {
   transform: translateY(-50%);
   font-size: 24px;
   color: white;
-  background-color: #333;
+  background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -76,14 +76,14 @@ img {
 }
 
 .arrow:hover {
-  background-color: #555;
+  background-color: transparent;
 }
 
 .left {
-  left: 10px;
+  left: -100px;
 }
 
 .right {
-  right: 10px;
+  right: -100px;
 }
 </style>
