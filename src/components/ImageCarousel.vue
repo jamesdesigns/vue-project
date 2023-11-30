@@ -1,131 +1,89 @@
 <template>
-  <div ref="lazyComponent" class="carousel fade-in  lazy-component">
-    <button v-if="isVisible" class="previous-btn" @click="prev">Previous</button>
-    <div v-if="isVisible" class="viewport">
-      <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }">
-        <div v-for="(item, index) in items" :key="index" class="slide">
-          <a href="#">
-            <img class="slide-img" :src="item.url" alt="Slide" />
-          </a>
-        </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <button class="arrow left" @click="prevImage">&lt;</button>
+      <div class="image-wrapper">
+        <img :src="images[currentIndex]" alt="Carousel Image" />
       </div>
+      <button class="arrow right" @click="nextImage">&gt;</button>
     </div>
-    <button v-if="isVisible" class="next-btn" @click="next">Next</button>
   </div>
-
 </template>
 
 <script>
-
 export default {
   data() {
     return {
-      isVisible: false,
       currentIndex: 0,
-      slideWidth: 300, // Adjust this to match the width of your individual slides
-      items: [
-        { url: 'https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg' },
-        { url: 'https://cdn.dribbble.com/userupload/4173059/file/original-1aebd83221dfcb583799b43de30c4621.png?resize=400x0' },
-        { url: 'https://cdn.dribbble.com/users/1332195/screenshots/9651082/media/24f62b568b5385a7e43de5e0676a5fac.jpg?resize=400x0' },
-        { url: 'https://www.mindinventory.com/blog/wp-content/uploads/2022/10/beauty-app-1024x768.png' },
-        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT__Ykp6DfdXW5zqCJXBzV1o66hC7hzyXsoPg&usqp=CAU' },
-        { url: 'https://pledrelms.s3.us-east-2.amazonaws.com/pledre-files/course-image/5fa067e3afe9810007362011/6346cc846507350007a6b2fd/ui.png' },
-        { url: 'https://i.pinimg.com/736x/cf/d0/0f/cfd00ff613363792d38fb666df03331e.jpg' },
-        { url: 'https://cdn.dribbble.com/userupload/3641151/file/original-d085468a47e8d5da76cdf61928f01c74.png?resize=400x0' }
-      ]
+      images: [
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fos-system.com%2Fblog%2Fwp-content%2Fuploads%2F2020%2F12%2Fdesign-with-rounded-corners.jpg&f=1&nofb=1&ipt=e588e066cdc645655614842e0a2c00ee46a01ad0e36853684932d2a359e93542&ipo=images',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.clicky.com%2Fwp-content%2Fuploads%2F2020%2F08%2F1-2.jpg&f=1&nofb=1&ipt=61f457706eb2512cc8c2b1940d60e74d5d2fafc4bcbad7161b03a029474054f8&ipo=images',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgillde.com%2Fwp-content%2Fuploads%2F2019%2F08%2FUI-Design-30-6.jpg&f=1&nofb=1&ipt=c80687e28e997317804a05796663fb23695910b457b04a36e6208982a55774c8&ipo=images',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6d%2F53%2F01%2F6d5301a6b6b41c5dc9fa8838b53a1921.png&f=1&nofb=1&ipt=3aae3624512e6f935024f2e09b765103e5fa6a56a41c8c324a944b315ca581f8&ipo=images',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbashooka.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fdashboard-ui-design-2017-5.jpg&f=1&nofb=1&ipt=5392974706f2df1ceaaaddea6cfd525092e587ca72a228a7f7792e2c4866be9a&ipo=images',
+      ],
     };
   },
   methods: {
-    prev() {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
-      }
+    nextImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
-    next() {
-      if (this.currentIndex < this.items.length - 3) {
-        this.currentIndex++;
-      }
-    },
-    observeElement() {
-      const options = {
-        rootMargin: '0px', // Adjust this margin as needed
-        threshold: 0.5, // Adjust this threshold as needed (0.5 means 50% of the element must be visible)
-      };
-
-      const observer = new IntersectionObserver(this.handleIntersection, options);
-      observer.observe(this.$refs.lazyComponent);
-    },
-    handleIntersection(entries) {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.isVisible = true;
-          entry.target.classList.remove('fade-in'); // Reset the fade-in animation for re-triggering
-        } else {
-          this.isVisible = false;
-        }
-      });
+    prevImage() {
+      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
     },
   },
-  mounted() {
-    this.observeElement();
-  },
-
 };
 </script>
 
 <style scoped>
-.carousel {
+/* Add your component styles here */
+.carousel-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  max-width: 900px;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.viewport {
+.image-wrapper {
   overflow: hidden;
-  width: 700px; /* Adjust this to match the width of your viewport */
-  padding-bottom: 90px;
+  border-radius: 8px;
 }
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slide {
-  display: flex;
-  flex: 0 0 auto;
-  margin-right: 10px; /* Adjust as needed for spacing between slides */
-  width: 325px;
-  height: auto;
-  background-color: white;
-  margin: 0 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
-  -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
-  box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
-}
-.slide-img { border-radius: 15px; height:100%;  }
-
-.previous-btn { margin-right: 40px; margin-top: -90px;}
-.next-btn { margin-left: 50px; margin-top: -90px; }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-.fade-in {
-  opacity: 0;
-  transition: opacity 3s ease-in-out; /* Adjust the duration and easing function as needed */
-  transition-delay: 250ms;
+  display: block;
 }
 
-.lazy-component {  text-align: center; height: 500px;padding:150px 0;}
-
-.lazy-component .fade-in {
-  opacity: 1;
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
   color: white;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: #555;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
 }
 </style>
-

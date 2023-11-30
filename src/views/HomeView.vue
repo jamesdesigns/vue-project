@@ -3,7 +3,7 @@
     <Header />
     <HeroBanner />
     <ImageCarousel />
-    <LazyText />
+    <Test />
     <Footer />
   </div>
 </template>
@@ -15,7 +15,7 @@ import { TimelineLite } from 'gsap'
 import Header from "@/components/Header.vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
-import LazyText from '@/components/LazyText.vue'; // Adjust the path accordingly
+import Test from '@/components/Test.vue'; // Adjust the path accordingly
 import Footer from "@/components/Footer.vue";
 
 
@@ -24,7 +24,7 @@ export default {
     Header,
     HeroBanner,
     ImageCarousel,
-    LazyText,
+    Test,
     Footer
   },
 }

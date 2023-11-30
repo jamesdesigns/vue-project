@@ -25,7 +25,7 @@
     width: 100%;
   }
   .hero-content { text-align: center;}
-  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:30px;margin-bottom: 45px;line-height: 1.3;}
+  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:20px;margin-bottom: 35px;line-height: 1.3;}
   button { 
     padding: 20px 40px; 
     border-radius: 50px;
@@ -39,7 +39,7 @@
     -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
     box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
   }
-  .orange-cta {margin-left: 30px; background-color: orange; color: black;}
+  .orange-cta {margin-left: 20px; background-color: orange; color: black;}
   .orange-cta:hover { background-color: rgb(255, 255, 255);}
   button:hover {
     -webkit-box-shadow: none;
