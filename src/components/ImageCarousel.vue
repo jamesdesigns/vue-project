@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Accelerate your </h1>
+    <h1>Accelerate your design process.</h1>
+    <p>Dive into seamless UX/UI with our custom templates!</p>
     <div class="carousel-container">
       <div class="carousel">
         <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
@@ -40,6 +41,8 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
+h1 { font-size: 3rem; color: white; text-align: center;}
+p { font-size: 1.5rem; color: white; text-align: center;}
 .carousel-container {
   display: flex;
   justify-content: center;

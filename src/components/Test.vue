@@ -56,6 +56,7 @@ ul {
   padding: 0;
   margin-bottom: 30px; 
 }
+
 h1 { color: white; font-size: 3rem; margin-bottom: 30px;}
 h2 { color: white; font-size: 2rem;margin-bottom: 30px;  }
 li {
@@ -63,6 +64,8 @@ li {
   color: white; 
   font-size: 1.5rem;
 }
+
+input { margin-left: 5%; }
 
 .submit-btn { 
   padding: 15px 45px; 
