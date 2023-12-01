@@ -1,13 +1,16 @@
 <template>
-  <div class="carousel-container">
-    <div class="carousel">
-      <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
-      <div class="image-wrapper carousel-card">
-        <img  :src="images[currentIndex]" alt="Carousel Image" />
+  <div>
+    <h1>Accelerate your </h1>
+    <div class="carousel-container">
+      <div class="carousel">
+        <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
+        <div class="image-wrapper carousel-card">
+          <img  :src="images[currentIndex]" alt="Carousel Image" />
+        </div>
+        <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button>
       </div>
-      <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
