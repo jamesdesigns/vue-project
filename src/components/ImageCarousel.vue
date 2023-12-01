@@ -2,8 +2,8 @@
   <div class="carousel-container">
     <div class="carousel">
       <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
-      <div class="image-wrapper">
-        <img :src="images[currentIndex]" alt="Carousel Image" />
+      <div class="image-wrapper carousel-card">
+        <img  :src="images[currentIndex]" alt="Carousel Image" />
       </div>
       <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button>
     </div>
@@ -59,6 +59,12 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.carousel-card {
+  -webkit-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
+box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
 }
 
 .sm-right-arrow { width: 50px; }
