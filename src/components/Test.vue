@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
-.test-container { display: flex; justify-content: center; margin: 0 auto; }
+.test-container { display: flex; justify-content: center; margin: 10% auto 0; height: 100vh; }
 ul {
   list-style-type: none;
   padding: 0;
