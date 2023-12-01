@@ -1,11 +1,11 @@
 <template>
   <div class="carousel-container">
     <div class="carousel">
-      <button class="arrow left" @click="prevImage">&lt;</button>
+      <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
       <div class="image-wrapper">
         <img :src="images[currentIndex]" alt="Carousel Image" />
       </div>
-      <button class="arrow right" @click="nextImage">&gt;</button>
+      <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button>
     </div>
   </div>
 </template>
@@ -60,6 +60,9 @@ img {
   height: auto;
   display: block;
 }
+
+.sm-right-arrow { width: 50px; }
+.sm-left-arrow { width: 50px; rotate: 180deg;}
 
 .arrow {
   position: absolute;
