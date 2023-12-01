@@ -63,12 +63,13 @@ img {
 
 .carousel-card {
   -webkit-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
--moz-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
+  box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
 }
 
 .sm-right-arrow { width: 50px; }
 .sm-left-arrow { width: 50px; rotate: 180deg;}
+
 
 .arrow {
   position: absolute;
