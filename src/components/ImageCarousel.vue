@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
-h1 { font-size: 3rem; color: white; text-align: center;}
+h1 { font-size: 3rem; font-weight: bold; color: white; text-align: center;}
 p { font-size: 1.5rem; color: white; text-align: center;}
 .carousel-container {
   display: flex;

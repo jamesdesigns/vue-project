@@ -13,7 +13,7 @@
     </ul>
     <button class="submit-btn" @click="submitAnswer" :disabled="submitted">Submit Answer</button>
     <p class="white-text result" v-if="submitted">
-      Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>! <br/><br/> <strong>The corret answer –</strong> <i>{{ choices[3] }}</i>
+      Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>! <br/><br/> <strong>The correct answer is: </strong> <i>{{ choices[3] }}</i>
     </p>
   </div>
   </div>
@@ -57,7 +57,7 @@ ul {
   margin-bottom: 30px; 
 }
 
-h1 { color: white; font-size: 3rem; margin-bottom: 30px; text-align: center;}
+h1 { color: white; font-size: 3rem; font-weight: bold; margin-bottom: 30px; text-align: center; line-height: 1 !important;}
 h2 { color: white; font-size: 2rem;margin-bottom: 30px;  }
 li {
   margin-bottom: 10px;
@@ -84,6 +84,7 @@ input { margin-left: 3%; }
 .submit-btn:hover {
   background-color: #1488CC;
   color: white;
+  box-shadow: none;
 }
 .white-text { color: white; }
 </style>
