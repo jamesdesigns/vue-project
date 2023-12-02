@@ -1,7 +1,7 @@
 <template>
   <div class="test-container">
     <div>
-      <h1>Test your knowledge.</h1>
+      <h1>Test your knowledge</h1>
     <h2>{{ question }}</h2>
     <ul>
       <li v-for="(choice, index) in choices" :key="index">
@@ -12,8 +12,8 @@
       </li>
     </ul>
     <button class="submit-btn" @click="submitAnswer" :disabled="submitted">Submit Answer</button>
-    <p class="white-text" v-if="submitted">
-      Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>!
+    <p class="white-text result" v-if="submitted">
+      Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>! <br/><br/> <strong>The corret answer –</strong> <i>{{ choices[3] }}</i>
     </p>
   </div>
   </div>
@@ -57,7 +57,7 @@ ul {
   margin-bottom: 30px; 
 }
 
-h1 { color: white; font-size: 3rem; margin-bottom: 30px;}
+h1 { color: white; font-size: 3rem; margin-bottom: 30px; text-align: center;}
 h2 { color: white; font-size: 2rem;margin-bottom: 30px;  }
 li {
   margin-bottom: 10px;
@@ -66,6 +66,7 @@ li {
 }
 
 input { margin-left: 3%; }
+.result { margin-top: 5%; font-size: 1.15rem; }
 
 .submit-btn { 
   margin-top: 2%;
