@@ -23,15 +23,15 @@
 export default {
   data() {
     return {
-      question: "What is UX design?",
+      question: "What is the primary purpose of wireframing in the UX/UI design process?",
       choices: [
-        "User Experience Design",
-        "User eXperience Design",
-        "Universal Experience Design",
-        "User Exploration Design",
-        "User Express Design"
+        "To create a visually appealing final design",
+        "To test the functionality of the website or application",
+        "To provide a high-fidelity representation of the user interface",
+        "To outline the structure and layout of a design before visual elements are added",
+        "To gather user feedback on color schemes and typography"
       ],
-      correctAnswerIndex: 0,
+      correctAnswerIndex: 3,
       selectedChoice: null,
       submitted: false,
       isCorrect: false,
@@ -65,9 +65,10 @@ li {
   font-size: 1.5rem;
 }
 
-input { margin-left: 5%; }
+input { margin-left: 3%; }
 
 .submit-btn { 
+  margin-top: 2%;
   padding: 15px 45px; 
   border-radius: 45px; 
   background-color: white; 
