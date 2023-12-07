@@ -184,24 +184,94 @@ export default {
     return {
       questions: [
         {
-          text: "What does UX stand for?",
-          options: ["User Experience", "User Experiment", "User Xperience", "Universal Experience"],
-          correctAnswer: 0,
+          text: "What is the primary purpose of wireframing in UI/UX design?",
+          options: ["To create a detailed visual design", "To showcase the final product", "To plan the layout and structure", "To add colors and images"],
+          correctAnswer: 2,
         },
         {
-          text: "Which design principle focuses on simplicity and clarity?",
-          options: ["Balance", "Contrast", "Emphasis", "Simplicity"],
+          text: "Which usability testing method involves observing and analyzing users interacting with a product in their natural environment?",
+          options: ["A/B Testing", "Remote Usability Testing", "Guerrilla Testing", "Field Studies"],
           correctAnswer: 3,
         },
         {
-          text: "What is the purpose of wireframing in UI/UX design?",
+          text: "What does the term 'affordance' refer to in UI design?",
           options: [
-            "To create a detailed visual design",
-            "To showcase the final product",
-            "To plan the layout and structure",
-            "To add colors and images",
+            "The visual appeal of a design",
+            "The perceived functionality of an object",
+            "The alignment of elements on the screen",
+            "The overall user experience",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          text: "Which design principle focuses on creating a visual hierarchy to guide users through content?",
+          options: [
+            "Proximity",
+            "Contrast",
+            "Alignment",
+            "Repetition",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          text: "What does the term 'cognitive load' refer to in UX design?",
+          options: [
+            "The visual complexity of a design",
+            "The amount of information a user can process",
+            "The emotional impact of a design",
+            "The time it takes for a user to complete a task",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          text: "In the context of UI design, what does the acronym 'CTA' stand for?",
+          options: [
+            "Creative Typography Approach",
+            "Centralized Text Alignment",
+            "Call to Action",
+            "Color Theory Application",
           ],
           correctAnswer: 2,
+        },
+        {
+          text: "What is the purpose of conducting a heuristic evaluation in UX design?",
+          options: [
+            "To analyze user behavior through analytics",
+            "To identify and fix usability issues based on expert reviews",
+            "To perform user testing on a prototype",
+            "To gather user feedback through surveys",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          text: "Which UX research method is best suited for exploring user needs, behaviors, and motivations?",
+          options: [
+            "Surveys",
+            "Card Sorting",
+            "In-depth Interviews",
+            "Usability Testing",
+          ],
+          correctAnswer: 2,
+        },
+        {
+          text: "What is the purpose of a personas in UX design?",
+          options: [
+            "To represent fictional characters for storytelling",
+            "To identify and understand the target audience",
+            "To create engaging visual elements",
+            "To define the color palette for a design",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          text: "Which color scheme uses colors that are adjacent to each other on the color wheel and share a common base color?",
+          options: [
+            "Analogous",
+            "Complementary",
+            "Triadic",
+            "Monochromatic",
+          ],
+          correctAnswer: 0,
         },
       ],
       currentQuestionIndex: 0,
@@ -257,7 +327,7 @@ ul {
   margin-bottom: 30px; 
 }
 
-h1 { color: white; font-size: 3rem; font-weight: bold; margin-bottom: 30px; text-align: center; line-height: 1 !important;}
+h1 { color: white; font-size: 3rem; font-weight: bold; margin-bottom: 60px; text-align: center; line-height: 1 !important;}
 h2 { color: white; font-size: 2rem;margin-bottom: 30px;  }
 li {
   margin-bottom: 10px;
