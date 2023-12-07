@@ -161,6 +161,11 @@ input { margin-left: 3%; }
           </li>
         </ul>
         <button class="submit-btn" @click="submitAnswer" :disabled="answered">Submit Answer</button>
+        <div>
+      <!-- <h2>Congratulations!</h2> -->
+      <!-- <p class="white-text result">You scored a total of {{ totalScore }} points. Great job!</p> -->
+      <p class="white-text result">Total Score: {{ totalScore }} points.</p>
+    </div>
         <div v-if="answered">
           <p class="white-text result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
           <p class="white-text result">Points earned: {{ accumulatedScore[currentQuestionIndex] }}</p>
@@ -168,11 +173,9 @@ input { margin-left: 3%; }
       </div>
       <button class="submit-btn" v-if="answered && currentQuestionIndex < questions.length - 1" @click="nextQuestion">Next Question</button>
     </div>
-    <div v-else>
-      <h2>Congratulations!</h2>
-      <p class="white-text result">You scored a total of {{ totalScore }} points. Great job!</p>
-    </div>
+
   </div>
+
 </template>
 
 <script>
@@ -203,7 +206,7 @@ export default {
       ],
       currentQuestionIndex: 0,
       selectedOptions: [null, null, null], // Array to store user-selected options for each question
-      answered: false,
+      answered: false, 
       accumulatedScore: [0, 0, 0],
     };
   },
