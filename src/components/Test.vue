@@ -2,20 +2,20 @@
   <div class="test-container">
     <div>
       <h1>Test your knowledge</h1>
-    <h2>{{ question }}</h2>
-    <ul>
-      <li v-for="(choice, index) in choices" :key="index">
-        <label>
-          <input type="radio" v-model="selectedChoice" :value="index" :disabled="submitted" />
-          {{ choice }}
-        </label>
-      </li>
-    </ul>
-    <button class="submit-btn" @click="submitAnswer" :disabled="submitted">Submit Answer</button>
-    <p class="white-text result" v-if="submitted">
-      Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>! <br/><br/> <strong>The correct answer is: </strong> <i>{{ choices[3] }}</i>
-    </p>
-  </div>
+      <h2>{{ question }}</h2>
+      <ul>
+        <li v-for="(choice, index) in choices" :key="index">
+          <label>
+            <input type="radio" v-model="selectedChoice" :value="index" :disabled="submitted" />
+            {{ choice }}
+          </label>
+        </li>
+      </ul>
+      <button class="submit-btn" @click="submitAnswer" :disabled="submitted">Submit Answer</button>
+      <p class="white-text result" v-if="submitted">
+        Your answer is <strong>{{ isCorrect ? 'correct' : 'incorrect' }}</strong>! <br/><br/> <strong>The correct answer is: </strong> <i>{{ choices[3] }}</i>
+      </p>
+    </div>
   </div>
 </template>
 
