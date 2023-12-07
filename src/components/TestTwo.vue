@@ -164,7 +164,7 @@ input { margin-left: 3%; }
         <div>
       <!-- <h2>Congratulations!</h2> -->
       <!-- <p class="white-text result">You scored a total of {{ totalScore }} points. Great job!</p> -->
-      <p class="white-text result">Total Score: {{ totalScore }} points.</p>
+      <p class="white-text result">Total Score: {{ totalScore }} / 100</p>
     </div>
         <div v-if="answered">
           <p class="white-text result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
@@ -184,17 +184,17 @@ export default {
     return {
       questions: [
         {
-          text: "What is the primary purpose of wireframing in UI/UX design?",
+          text: "1. What is the primary purpose of wireframing in UI/UX design?",
           options: ["To create a detailed visual design", "To showcase the final product", "To plan the layout and structure", "To add colors and images"],
           correctAnswer: 2,
         },
         {
-          text: "Which usability testing method involves observing and analyzing users interacting with a product in their natural environment?",
+          text: "2. Which usability testing method involves observing and analyzing users interacting with a product in their natural environment?",
           options: ["A/B Testing", "Remote Usability Testing", "Guerrilla Testing", "Field Studies"],
           correctAnswer: 3,
         },
         {
-          text: "What does the term 'affordance' refer to in UI design?",
+          text: "3. What does the term 'affordance' refer to in UI design?",
           options: [
             "The visual appeal of a design",
             "The perceived functionality of an object",
@@ -204,7 +204,7 @@ export default {
           correctAnswer: 1,
         },
         {
-          text: "Which design principle focuses on creating a visual hierarchy to guide users through content?",
+          text: "4. Which design principle focuses on creating a visual hierarchy to guide users through content?",
           options: [
             "Proximity",
             "Contrast",
@@ -214,7 +214,7 @@ export default {
           correctAnswer: 1,
         },
         {
-          text: "What does the term 'cognitive load' refer to in UX design?",
+          text: "5. What does the term 'cognitive load' refer to in UX design?",
           options: [
             "The visual complexity of a design",
             "The amount of information a user can process",
@@ -224,7 +224,7 @@ export default {
           correctAnswer: 1,
         },
         {
-          text: "In the context of UI design, what does the acronym 'CTA' stand for?",
+          text: "6. In the context of UI design, what does the acronym 'CTA' stand for?",
           options: [
             "Creative Typography Approach",
             "Centralized Text Alignment",
@@ -234,7 +234,7 @@ export default {
           correctAnswer: 2,
         },
         {
-          text: "What is the purpose of conducting a heuristic evaluation in UX design?",
+          text: "7. What is the purpose of conducting a heuristic evaluation in UX design?",
           options: [
             "To analyze user behavior through analytics",
             "To identify and fix usability issues based on expert reviews",
@@ -244,7 +244,7 @@ export default {
           correctAnswer: 1,
         },
         {
-          text: "Which UX research method is best suited for exploring user needs, behaviors, and motivations?",
+          text: "8. Which UX research method is best suited for exploring user needs, behaviors, and motivations?",
           options: [
             "Surveys",
             "Card Sorting",
@@ -254,7 +254,7 @@ export default {
           correctAnswer: 2,
         },
         {
-          text: "What is the purpose of a personas in UX design?",
+          text: "9. What is the purpose of a personas in UX design?",
           options: [
             "To represent fictional characters for storytelling",
             "To identify and understand the target audience",
@@ -264,7 +264,7 @@ export default {
           correctAnswer: 1,
         },
         {
-          text: "Which color scheme uses colors that are adjacent to each other on the color wheel and share a common base color?",
+          text: "10. Which color scheme uses colors that are adjacent to each other on the color wheel and share a common base color?",
           options: [
             "Analogous",
             "Complementary",
@@ -277,7 +277,7 @@ export default {
       currentQuestionIndex: 0,
       selectedOptions: [null, null, null], // Array to store user-selected options for each question
       answered: false, 
-      accumulatedScore: [0, 0, 0],
+      accumulatedScore: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     };
   },
   computed: {
