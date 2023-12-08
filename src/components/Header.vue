@@ -17,13 +17,13 @@
     display: flex; 
     justify-content: space-between; 
     width: 100%;
-    color: white;
+    color: #090909;
     padding-top: 4px;
     }
     .logo {  align-self: flex-start; /* Align the left element to the start (left) */ 
     font-size: 1.25rem;
-    font-weight: bold;
-    color: white;
+    font-weight: Bold;
+    color: #090909;
     }
     .small-tagline { font-size: .9rem; }
     .btn {
@@ -32,20 +32,36 @@
       justify-content: center;
       padding: 20px;
       border-radius: 35px;
+      color: #090909;
+ 
     }
-    .btn:hover { background-color: white; opacity: 1; border-radius: 35px; }
+    .btn:hover { 
+      /* background-color: white; 
+      opacity: 1; 
+      border-radius: 35px;  */
+      padding: 20px;
+      color: #090909;
+    font-size: 18px;
+    border-radius: 35px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .1s;
+    box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
+    
+    }
     .right-element {   
       display: flex;
       justify-content: flex-end; /* Align the right elements to the end (right) */
     }
     .right-element .nav-link-1,
-    .right-element .nav-link-2 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
-    .right-element .nav-link-3 { margin: 5px; color: white; font-size: 1.05rem; font-weight: 600; }
+    .right-element .nav-link-2 { margin: 5px; color: #090909; font-size: 1.05rem; font-weight:400; }
+    .right-element .nav-link-3 { margin: 5px; color: #090909; font-size: 1.05rem; font-weight: 400; }
 
     .nav-link-1:hover,
     .nav-link-2:hover,
     .nav-link-3:hover {
-      color: #2f63ba;
+      /* color: #2f63ba; */
+      color: #090909;
     }
 
     nav { 
