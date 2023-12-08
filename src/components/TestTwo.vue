@@ -161,6 +161,8 @@ input { margin-left: 3%; }
           </li>
         </ul>
         <button class="submit-btn" @click="submitAnswer" :disabled="answered">Submit Answer</button>
+        <button class="next-btn" v-if="answered && currentQuestionIndex < questions.length - 1" @click="nextQuestion">Next Question</button>
+
         <div>
       <!-- <h2>Congratulations!</h2> -->
       <!-- <p class="white-text result">You scored a total of {{ totalScore }} points. Great job!</p> -->
@@ -168,10 +170,9 @@ input { margin-left: 3%; }
     </div>
         <div v-if="answered">
           <p class="white-text result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
-          <p class="white-text result">Points earned: {{ accumulatedScore[currentQuestionIndex] }}</p>
+          <p class="white-text result">Points earned: +{{ accumulatedScore[currentQuestionIndex] }}</p>
         </div>
       </div>
-      <button class="submit-btn" v-if="answered && currentQuestionIndex < questions.length - 1" @click="nextQuestion">Next Question</button>
     </div>
 
   </div>
@@ -343,6 +344,20 @@ input { margin-left: 3%; }
   padding: 15px 45px; 
   border-radius: 45px; 
   background-color: white; 
+  font-size: 1.15rem;
+  border: none; 
+  cursor: pointer;
+    -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+    box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+}
+
+.next-btn {
+  margin-top: 2%;
+  margin-left: 1%;
+  padding: 15px 45px; 
+  border-radius: 45px; 
+  background-color: orange; 
   font-size: 1.15rem;
   border: none; 
   cursor: pointer;
