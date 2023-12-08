@@ -76,6 +76,7 @@
   .large-text { font-size: 5rem; font-weight: bold;color:#090909;line-height: 1; }
 
   @media only screen and (max-width: 767px) {
+    button { margin-bottom: 20px;}
     .intro { font-size: 1.25rem; }
     .orange-cta { margin-left: 0; }
     .large-text { font-size: 3rem; }

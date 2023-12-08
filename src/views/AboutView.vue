@@ -1,7 +1,7 @@
 <template>
   <Header />
   <div class="about">
-    <h1>Learn how you can benefit from UX Guidelines and Template.</h1>
+    <h1>Learn how you can benefit from our UX Guidelines and Templates.</h1>
   </div>
   <Footer />
 </template>

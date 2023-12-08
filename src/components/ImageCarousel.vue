@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Accelerate your design process.</h1>
+    <h1>Improve your design process.</h1>
     <p>Dive into seamless UX/UI with our custom templates!</p>
     <div class="carousel-container">
       <div class="carousel">
