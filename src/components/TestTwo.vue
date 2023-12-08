@@ -29,6 +29,7 @@
           <p class="white-text result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
           <p class="white-text result">Points earned: +{{ accumulatedScore[currentQuestionIndex] }}</p>
         </div>
+        <div id="answer-question"></div>
       </div>
     </div>
 
@@ -165,6 +166,7 @@ export default {
         this.answered = true;
       } else {
         alert("Please select an option before submitting your answer.");
+        // Output this text in the page
       }
     },
     nextQuestion() {
