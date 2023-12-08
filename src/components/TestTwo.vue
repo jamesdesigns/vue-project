@@ -242,5 +242,10 @@ input { margin-left: 3%; }
   box-shadow: none;
 }
 .white-text { color: white; }
+
+@media only screen and (max-width: 768px) {
+  .test-container { width: 100%; }
+  h2 { line-height: 1.25;}
+  }
 </style>
 

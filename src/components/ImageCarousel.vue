@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
-h1 { font-size: 3rem; font-weight: bold; color: white; text-align: center;}
+h1 { font-size: 3rem; font-weight: bold; color: white; text-align: center;line-height: 1; margin-bottom: 30px;}
 p { font-size: 1.5rem; color: white; text-align: center;}
 .carousel-container {
   display: flex;
@@ -102,4 +102,10 @@ img {
 .right {
   right: -100px;
 }
+
+@media only screen and (max-width: 768px) {
+  h1 { margin-bottom: 30px;}
+  }
+
+
 </style>
