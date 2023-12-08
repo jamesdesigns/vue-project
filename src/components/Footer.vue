@@ -18,13 +18,13 @@ footer {
 }
 .logo {
   align-self: flex-start; /* Align the left element to the start (left) */
-  color: white;
+  color: #090909;
 }
 
 .right-element {
   display: flex;
   justify-content: flex-end; /* Align the right elements to the end (right) */
 }
-.right-element .footer-nav-link-1{ margin: 0 20px;color:white;}
-.right-element .footer-nav-link-2 { margin: 0 0 0 5px;color:white;}
+.right-element .footer-nav-link-1{ margin: 0 20px;color:#090909;}
+.right-element .footer-nav-link-2 { margin: 0 0 0 5px;color:#090909;}
 </style>

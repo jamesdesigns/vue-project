@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #090909;
   height: 90vh;
 }
 </style>

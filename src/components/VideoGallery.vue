@@ -1,7 +1,7 @@
 <template>
   <div class="video-gallery">
     <div v-for="(item, key) in videos" :key="key">
-      <div v-html="generateYouTubeEmbedCode(item.url)"></div>
+      <div class="video-container" v-html="generateYouTubeEmbedCode(item.url)"></div>
       <h3>{{ item.title }}</h3>
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-h3 { font-weight: bold; }
+h3 { font-weight:bold; color:#090909; margin-top: 12px;}
 .video-gallery {
   display: grid; 
   grid-template-columns: repeat(3, 1fr);
@@ -55,6 +55,12 @@ h3 { font-weight: bold; }
   width: 100%;
   margin-top:30px;
   color: white;
+}
+
+.video-container { height: 200px;}
+.video-container:hover {
+  box-shadow: 7px 7px 13px #b0b0b0;
+  height: 200px;
 }
 @media only screen and (max-width: 1000px) {
     .video-gallery { 

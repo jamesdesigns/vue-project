@@ -23,11 +23,11 @@
 
         <div>
 
-      <p class="white-text result">Total Score: {{ totalScore }} / 100</p>
+      <p class="result">Total Score: {{ totalScore }} / 100</p>
     </div>
         <div v-if="answered">
-          <p class="white-text result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
-          <p class="white-text result">Points earned: +{{ accumulatedScore[currentQuestionIndex] }}</p>
+          <p class="result">You selected: {{ questions[currentQuestionIndex].options[selectedOptions[currentQuestionIndex]] }}</p>
+          <p class="result">Points earned: +{{ accumulatedScore[currentQuestionIndex] }}</p>
         </div>
         <div id="answer-question"></div>
       </div>
@@ -196,11 +196,11 @@ ul {
   margin-bottom: 30px; 
 }
 
-h1 { color: white; font-size: 3rem; font-weight: bold; margin-bottom: 60px; text-align: center; line-height: 1 !important;}
-h2 { color: white; font-size: 2rem;margin-bottom: 30px;  }
+h1 { color: #090909; font-size: 3rem; font-weight: bold; margin-bottom: 60px; text-align: center; line-height: 1 !important;}
+h2 { color: #090909; font-size: 2rem;font-weight: bold;margin-bottom: 30px;line-height: 1.4;  }
 li {
   margin-bottom: 10px;
-  color: white; 
+  color: #090909; 
   font-size: 1.5rem;
 }
 p { margin: 5px 0; }

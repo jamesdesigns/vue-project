@@ -41,8 +41,8 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
-h1 { font-size: 3rem; font-weight: bold; color: white; text-align: center;line-height: 1; margin-bottom: 30px;}
-p { font-size: 1.5rem; color: white; text-align: center;}
+h1 { font-size: 3rem; font-weight: bold; color: #090909; text-align: center;line-height: 1; margin-bottom: 30px;}
+p { font-size: 1.5rem; color: #090909; text-align: center;}
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -65,6 +65,16 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  align-items: center;
+  background-color: #e8e8e8;
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 4rem;
+
 }
 
 .carousel-card {
@@ -73,8 +83,8 @@ img {
   box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
 }
 
-.sm-right-arrow { width: 50px; }
-.sm-left-arrow { width: 50px; rotate: 180deg;}
+.sm-right-arrow { width: 50px;border-radius: 50px; }
+.sm-left-arrow { width: 50px; rotate: 180deg;border-radius: 50px;}
 
 
 .arrow {
@@ -82,9 +92,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  color: white;
+  color: #090909;
   background-color: transparent;
   border: none;
+  border-radius:50px;
   padding: 10px;
   cursor: pointer;
   outline: none;
@@ -100,7 +111,7 @@ img {
 }
 
 .right {
-  right: -100px;
+  right: -165px;
 }
 
 @media only screen and (max-width: 768px) {

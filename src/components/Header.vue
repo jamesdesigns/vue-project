@@ -27,26 +27,24 @@
     }
     .small-tagline { font-size: .9rem; }
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      border-radius: 35px;
       color: #090909;
+    padding: 0.5em 1.7em;
+    font-size: 18px;
+    height: 45px;
  
     }
     .btn:hover { 
       /* background-color: white; 
       opacity: 1; 
       border-radius: 35px;  */
-      padding: 20px;
-      color: #090909;
-    font-size: 18px;
+      border: 1px solid white;
+    background: white;
     border-radius: 35px;
+    height: 45px;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
-    transition: all .1s;
-    box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
+    /* transition: all .3s; */
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     
     }
     .right-element {   

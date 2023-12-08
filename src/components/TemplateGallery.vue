@@ -85,6 +85,7 @@ export default {
 </script>
 
 <style scoped>
+h3 { color: #090909;}
 .template-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -116,8 +117,14 @@ export default {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
+  margin-top: 30px;
   margin-bottom: 60px;
   background-color: white;
+}
+
+.template-item:hover {
+  box-shadow: 5px 5px 11px #c5c5c5;
+  border: 1px solid #fff;
 }
 
 .template-item img {
