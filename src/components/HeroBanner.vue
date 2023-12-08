@@ -25,7 +25,7 @@
     width: 100%;
   }
   .hero-content { text-align: center;}
-  .intro { max-width: 625px; color: white; font-size:1.5rem;margin-top:20px;margin-bottom: 35px;line-height: 1.3;}
+  .intro { max-width: 725px; color: white; font-size:1.5rem;margin-top:20px;margin-bottom: 35px;line-height: 1.3;}
   button { 
     padding: 20px 40px; 
     border-radius: 50px;

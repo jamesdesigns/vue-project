@@ -341,12 +341,14 @@ li {
   color: white; 
   font-size: 1.5rem;
 }
+p { margin: 5px 0; }
 
 input { margin-left: 3%; }
-.result { margin-top: 5%; font-size: 1.15rem; }
+.result { margin-top: 2%; font-size: 1.15rem; }
 
 .submit-btn { 
   margin-top: 2%;
+  margin-bottom: 2%;
   padding: 15px 45px; 
   border-radius: 45px; 
   background-color: white; 
