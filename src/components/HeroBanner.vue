@@ -4,8 +4,10 @@
       <h1 class="large-text" ref="box">Get Hired</h1>
       <p class="intro" ref="box2">Unlock your path to a thriving career as a UX/UI Designer with our comprehensive eBook – your ultimate guide to landing that dream job!</p>
       <div class="cta-section">
-        <button @click="downloadPDF">Download FREE eBook</button>
-        <button class="orange-cta">Buy UX Template $9.99</button>
+        <!-- <button @click="downloadPDF">Download FREE eBook</button>
+        <button class="orange-cta">Buy UX Template $9.99</button> -->
+        <button class="player__btn player__btn--small" @click="downloadPDF">Download FREE ebook</button>
+        <button class="buy__btn buy__btn--small">Buy UX Template $9.99</button>
       </div>
     </div>
     <div class="hero-image">
@@ -27,7 +29,9 @@
   }
   .hero-content { text-align: center;}
   .intro { max-width: 725px; color: #090909; font-size:1.5rem;margin-top:20px;margin-bottom: 35px;line-height: 1.3;}
-  button { 
+
+  .cta-section { display: flex; flex-direction: row; justify-content: center;}
+  .buy-cta { 
     /* padding: 20px 40px; 
     border-radius: 50px;
     background-color: #1488CC;
@@ -44,18 +48,22 @@
     font-size: 18px;
     border-radius: 35px;
     height: 55px;
-    background: #e8e8e8;
+    /* background: #e8e8e8; */
+    background: orange;
     border: 1px solid #e8e8e8;
     transition: all .3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }
-  .orange-cta {
+
+
+
+  .buy-cta {
     margin-left: 20px; 
     background-color: rgb(255, 255, 255); 
     color: #090909; 
     border: 1px solid white;
   }
-  .orange-cta:hover { 
+  .buy-cta:hover { 
     background-color: orange;
     color:black;
   }
@@ -66,13 +74,79 @@
     animation: 3s ease-in 1s;
     background-color:#ffffff;
     color: black; */
-    border: 1px solid orange;
-    background: white;
+    /* border: 1px solid orange;
+    background: white; */
   }
   button:active {
   box-shadow: 4px 4px 12px #c5c5c5,
              -4px -4px 12px #ffffff;
 }
+
+
+.player__btn {
+  cursor: pointer;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: gray;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 35px;
+  height: 55px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+}
+
+.player__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.player__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+
+
+
+.buy__btn {
+  cursor: pointer;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  /* color: gray; */
+  color: black;
+  padding: 0.7em 1.7em;
+  margin-left: 3%;
+  font-size: 18px;
+  border-radius: 35px;
+  height: 55px;
+  /* background: #e8e8e8; */
+  background: orange;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+}
+
+.buy__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.buy__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+
+
   .large-text { font-size: 5rem; font-weight: bold;color:#090909;line-height: 1; }
 
   @media only screen and (max-width: 767px) {
