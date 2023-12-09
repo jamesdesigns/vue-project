@@ -4,11 +4,17 @@
     <p>Dive into seamless UX/UI with our custom templates!</p>
     <div class="carousel-container">
       <div class="carousel">
-        <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button>
+        <!-- <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button> -->
+          <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
+            <i class="fas fa-arrow-left"></i>
+          </div>
         <div class="image-wrapper carousel-card">
           <img  :src="images[currentIndex]" alt="Carousel Image" />
         </div>
-        <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button>
+        <!-- <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button> -->
+          <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
+            <i class="fas fa-arrow-left"></i>
+          </div>
       </div>
     </div>
 </div>
@@ -43,6 +49,30 @@ export default {
 /* Add your component styles here */
 h1 { font-size: 3rem; font-weight: bold; color: #090909; text-align: center;line-height: 1; margin-bottom: 30px;}
 p { font-size: 1.5rem; color: #090909; text-align: center;}
+
+
+.player__btn {
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: gray;
+}
+
+.player__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.player__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -111,7 +141,7 @@ img {
 }
 
 .right {
-  right: -165px;
+  right: -100px;
 }
 
 @media only screen and (max-width: 768px) {
