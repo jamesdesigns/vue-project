@@ -77,7 +77,7 @@ p { font-size: 1.5rem; color: #090909; text-align: center;}
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 .carousel {

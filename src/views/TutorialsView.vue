@@ -15,7 +15,7 @@
   margin-bottom: 45px;
 }
 
-h1 { color: #090909;text-align: center;font-size: 2.5rem; line-height: 1.25;}
+h1 { color: #090909;text-align: center;font-size: 2.5rem; font-weight:bold; line-height: 1.25;}
 
 .tutorials {
   display: flex;

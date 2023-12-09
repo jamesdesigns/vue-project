@@ -151,6 +151,8 @@
 
   @media only screen and (max-width: 767px) {
     button { margin-bottom: 20px;}
+    .cta-section { flex-direction: column; }
+    .buy__btn { margin-left: 0; }
     .intro { font-size: 1.25rem; }
     .orange-cta { margin-left: 0; }
     .large-text { font-size: 3rem; }
