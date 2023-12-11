@@ -18,9 +18,10 @@
             </label>
           </li>
         </ul>
-        <button class="submit-btn" @click="submitAnswer" :disabled="answered">Submit Answer</button>
-        <button class="next-btn" v-if="answered && currentQuestionIndex < questions.length - 1" @click="nextQuestion">Next Question</button>
-
+        <div class="button-container">
+          <button class="test__btn test__btn--small" @click="submitAnswer" :disabled="answered">Submit Answer</button>
+          <button class="next__btn next__btn--small" v-if="answered && currentQuestionIndex < questions.length - 1" @click="nextQuestion">Next Question</button>
+        </div>
         <div>
 
       <p class="result">Total Score: {{ totalScore }} / 100</p>
@@ -243,6 +244,67 @@ input { margin-left: 3%; }
     -webkit-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
     -moz-box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
     box-shadow: 10px 10px 15px -3px rgba(0,0,0,0.43);
+}
+
+.button-container {
+  display: flex; flex-direction:row; justify-content: left;
+}
+
+.test__btn {
+  cursor: pointer;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: gray;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 35px;
+  height: 55px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+}
+
+.test__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.test__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.next__btn {
+  cursor: pointer;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: black;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 35px;
+  height: 55px;
+  background: orange;
+  border: 1px solid orange;
+  transition: all .3s;
+  margin-left: 3%;
+}
+
+.next__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.next__btn--small {
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .submit-btn:hover {
