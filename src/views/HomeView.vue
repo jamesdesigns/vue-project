@@ -4,6 +4,7 @@
     <HeroBanner />
     <ImageCarousel />
     <TestTwo />
+    <testimonials />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Header from "@/components/Header.vue";
 import HeroBanner from "@/components/HeroBanner.vue";
 import ImageCarousel from "@/components/ImageCarousel.vue";
 import TestTwo from '@/components/TestTwo.vue';
+import Testimonials from '@/components/Testimonials.vue';
 import Footer from "@/components/Footer.vue";
 
 
@@ -25,6 +27,7 @@ export default {
     HeroBanner,
     ImageCarousel,
     TestTwo,
+    Testimonials,
     Footer,
   },
 }
