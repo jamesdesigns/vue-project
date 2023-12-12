@@ -1,5 +1,6 @@
 <template>
   <div class="testimonial-slider">
+    <h3>See what others are saying.</h3>
     <div class="testimonial" v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === currentIndex }">
       <div class="testimonial-content">
         <p>{{ testimonial.message }}</p>
@@ -28,7 +29,7 @@ export default {
         {
           message: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           author: "Jane Smith",
-          profilePicture: "phttps://placehold.co/200x200",
+          profilePicture: "https://placehold.co/200x200",
         },
         {
           message: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -50,17 +51,19 @@ export default {
 </script>
 
 <style scoped>
+h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px; }
 .testimonial-slider {
   position: relative;
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto;
+  height: 50vh;
 }
 
 .testimonial {
   display: none;
-  padding: 20px;
+  padding: 60px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #f9f9f9;
   position: relative;
 }
@@ -72,6 +75,7 @@ export default {
 .testimonial-content {
   margin-bottom: 15px;
   max-width: 550px;
+  margin-left: 175px;
 }
 
 .author {
@@ -80,13 +84,13 @@ export default {
 }
 
 .profile-picture {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 35px;
+  left: 35px;
 }
 
 .slider-controls {
