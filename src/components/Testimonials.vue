@@ -1,6 +1,6 @@
 <template>
   <div class="testimonial-slider">
-    <h3>Real User Stories</h3>
+    <h3>Client Success Stories</h3>
     <div class="testimonial" v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === currentIndex }">
       <div class="testimonial-content">
         <p>{{ testimonial.message }}</p>
