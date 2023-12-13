@@ -1,6 +1,6 @@
 <template>
   <div class="testimonial-slider">
-    <h3>See what others are saying.</h3>
+    <h3>Real User Stories</h3>
     <div class="testimonial" v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === currentIndex }">
       <div class="testimonial-content">
         <p>{{ testimonial.message }}</p>
@@ -56,7 +56,7 @@ h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px
   position: relative;
   max-width: 850px;
   margin: 0 auto;
-  height: 50vh;
+  height: 70vh;
 }
 
 .testimonial {
