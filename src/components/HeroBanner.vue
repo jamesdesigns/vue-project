@@ -147,7 +147,7 @@
 
 
 
-  .large-text { font-size: 5rem; font-weight: bold;color:#090909;line-height: 1; }
+  .large-text { font-size: 5rem; font-weight: bolder;color:#090909;line-height: 1; }
 
   @media only screen and (max-width: 767px) {
     button { margin-bottom: 20px;}

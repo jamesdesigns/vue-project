@@ -1,6 +1,6 @@
 <template>
   <div class="testimonial-slider">
-    <h3>Client Success Stories</h3>
+    <h3>Our Users Success Stories</h3>
     <div class="testimonial" v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index === currentIndex }">
       <div class="testimonial-content">
         <p>{{ testimonial.message }}</p>
@@ -10,12 +10,12 @@
     </div>
     <div class="slider-controls">
       <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
-        <i class="fas fa-arrow-left"></i>
+        <button @click="prevTestimonial" :disabled="currentIndex === 0"><i class="fas fa-arrow-left"></i></button>
       </div>
       <!-- <button @click="prevTestimonial" :disabled="currentIndex === 0">Previous</button>
       <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1">Next</button> -->
       <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
-        <i class="fas fa-arrow-left"></i>
+        <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1"><i class="fas fa-arrow-left"></i></button>
       </div>
     </div>
   </div>
