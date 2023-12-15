@@ -9,8 +9,14 @@
       <img :src="testimonial.profilePicture" alt="Profile Picture" class="profile-picture" />
     </div>
     <div class="slider-controls">
-      <button @click="prevTestimonial" :disabled="currentIndex === 0">Previous</button>
-      <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1">Next</button>
+      <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <!-- <button @click="prevTestimonial" :disabled="currentIndex === 0">Previous</button>
+      <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1">Next</button> -->
+      <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
+        <i class="fas fa-arrow-left"></i>
+      </div>
     </div>
   </div>
 </template>
@@ -59,6 +65,31 @@ h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px
   height: 70vh;
 }
 
+.player__btn {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: gray;
+}
+
+.player__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.player__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 10px;
+}
+
+
 .testimonial {
   display: none;
   padding: 60px;
@@ -94,8 +125,13 @@ h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px
 }
 
 .slider-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
   margin-top: 15px;
   text-align: center;
+  margin: 3% auto 0;
 }
 
 button {
