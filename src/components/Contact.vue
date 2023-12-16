@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style scoped>
+h1 { color: #242424; }
 .contact-container {
   max-width: 400px;
   margin: 0 auto;

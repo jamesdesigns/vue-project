@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style scoped>
-h3 { font-weight:bold; color:#090909; margin-top: 12px;}
+h3 { font-weight:bold; color:#242424; margin-top: 12px;}
 
 .dark-bg { background: black;}
 .video-gallery {

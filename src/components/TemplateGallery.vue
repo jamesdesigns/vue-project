@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style scoped>
-h3 { color: #090909;}
+h3 { color: #242424;}
 .template-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
