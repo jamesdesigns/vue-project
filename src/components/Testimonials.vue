@@ -10,12 +10,20 @@
     </div>
     <div class="slider-controls">
       <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
-        <button @click="prevTestimonial" :disabled="currentIndex === 0"><i class="fas fa-arrow-left"></i></button>
+        <div  @click="prevTestimonial" :disabled="currentIndex === 0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </div>
       </div>
       <!-- <button @click="prevTestimonial" :disabled="currentIndex === 0">Previous</button>
       <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1">Next</button> -->
       <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
-        <button @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1"><i class="fas fa-arrow-left"></i></button>
+        <div @click="nextTestimonial" :disabled="currentIndex === testimonials.length - 1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -134,6 +142,30 @@ h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px
   margin: 3% auto 0;
 }
 
+.arrow {
+  position: absolute;
+  top: 60%;
+  height: 30px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #090909;
+  background-color: transparent;
+  border: none;
+  border-radius:50px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.left {
+  left: 350px;
+}
+
+.right {
+  right: 350px;
+}
+
 button {
   padding: 10px;
   margin: 0 5px;
@@ -141,10 +173,11 @@ button {
   border: none;
   background-color: #3498db;
   color: #fff;
-}
+} 
 
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
 </style>

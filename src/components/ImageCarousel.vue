@@ -6,14 +6,20 @@
       <div class="carousel">
         <!-- <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button> -->
           <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
-            <i class="fas fa-arrow-left"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+</svg>
+
           </div>
         <div class="image-wrapper carousel-card">
           <img  :src="images[currentIndex]" alt="Carousel Image" />
         </div>
         <!-- <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button> -->
           <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
-            <i class="fas fa-arrow-left"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+
           </div>
       </div>
     </div>
