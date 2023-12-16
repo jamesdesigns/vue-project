@@ -124,6 +124,7 @@
     8px 8px 20px #0001, 5px 5px 6px 0px #0001;
   /* color: gray; */
   color: white;
+  font-weight:900;
   padding: 0.7em 1.7em;
   margin-left: 3%;
   font-size: 18px;
@@ -147,7 +148,7 @@
 
 
 
-  .large-text { font-size: 5rem; font-weight: bolder;color:#090909;line-height: 1; }
+  .large-text { font-size: 5rem; font-weight: bolder;color:#242424;line-height: 1; }
 
   @media only screen and (max-width: 767px) {
     button { margin-bottom: 20px;}

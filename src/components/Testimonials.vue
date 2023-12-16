@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped>
-h3 { text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px; }
+h3 { color: #242424; text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px; }
 .testimonial-slider {
   position: relative;
   max-width: 850px;

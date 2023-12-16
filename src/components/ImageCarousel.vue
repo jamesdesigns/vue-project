@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-h1 { font-size: 3rem; font-weight: bold; color: #090909; text-align: center;line-height: 1; margin-bottom: 30px;}
+h1 { font-size: 3rem; font-weight: bold; color: #242424; text-align: center;line-height: 1; margin-bottom: 30px;}
 p { font-size: 1.5rem; color: #090909; text-align: center;}
 
 

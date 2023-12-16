@@ -17,7 +17,7 @@
     display: flex; 
     justify-content: space-between; 
     width: 100%;
-    color: #090909;
+    color: #242424;
     padding-top: 4px;
     }
     .logo {  align-self: flex-start; /* Align the left element to the start (left) */ 
