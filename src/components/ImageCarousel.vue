@@ -1,26 +1,22 @@
 <template>
   <div>
     <h1>Improve your design process.</h1>
-    <p>Dive into seamless UX/UI with our custom templates!</p>
+    <p style="text-align: center;">Dive into seamless UX/UI with our custom templates!</p>
     <div class="carousel-container">
       <div class="carousel">
-        <!-- <button class="arrow left" @click="prevImage"><img class="sm-left-arrow" src="../assets/right-arrow.svg" /></button> -->
           <div class="arrow left player__btn player__btn--small" id="previous" @click="prevImage">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-</svg>
-
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
           </div>
         <div class="image-wrapper carousel-card">
           <img  :src="images[currentIndex]" alt="Carousel Image" />
         </div>
-        <!-- <button class="arrow right" @click="nextImage"><img class="sm-right-arrow" src="../assets/right-arrow.svg" /></button> -->
           <div class="arrow right player__btn player__btn--small" id="previous" @click="nextImage">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-</svg>
-
-          </div>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </div>
       </div>
     </div>
 </div>
@@ -52,7 +48,6 @@ export default {
 </script>
 
 <style scoped>
-/* Add your component styles here */
 h1 { font-size: 3rem; font-weight: bold; color: #090909; text-align: center;line-height: 1; margin-bottom: 30px;}
 p { font-size: 1.5rem; color: #090909; text-align: center;}
 
