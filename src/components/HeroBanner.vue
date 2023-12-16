@@ -123,14 +123,14 @@
   box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
     8px 8px 20px #0001, 5px 5px 6px 0px #0001;
   /* color: gray; */
-  color: black;
+  color: white;
   padding: 0.7em 1.7em;
   margin-left: 3%;
   font-size: 18px;
   border-radius: 35px;
   height: 55px;
   /* background: #e8e8e8; */
-  background: orange;
+  background: #009aff;
   border: 1px solid #e8e8e8;
   transition: all .3s;
 }

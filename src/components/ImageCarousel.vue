@@ -114,7 +114,7 @@ img {
   box-shadow: -5px 11px 59px -10px rgba(0,0,0,0.75);
 }
 
-.sm-right-arrow { width: 50px;border-radius: 50px; }
+.sm-right-arrow { width: 50px; border-radius: 50px; }
 .sm-left-arrow { width: 50px; rotate: 180deg;border-radius: 50px;}
 
 
@@ -148,6 +148,4 @@ img {
 @media only screen and (max-width: 768px) {
   h1 { margin-bottom: 30px;}
   }
-
-
 </style>
