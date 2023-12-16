@@ -6,7 +6,7 @@
       <div class="cta-section">
         <!-- <button @click="downloadPDF">Download FREE eBook</button>
         <button class="orange-cta">Buy UX Template $9.99</button> -->
-        <button class="player__btn player__btn--small" @click="downloadPDF">Download FREE ebook</button>
+        <button class="player__btn player__btn--small buy-cta" @click="downloadPDF">Download FREE ebook</button>
         <button class="buy__btn buy__btn--small">Buy UX Template $9.99</button>
       </div>
     </div>
@@ -59,7 +59,7 @@
 
   .buy-cta {
     margin-left: 20px; 
-    background-color: rgb(255, 255, 255); 
+    background-color: orange; 
     color: #090909; 
     border: 1px solid white;
   }

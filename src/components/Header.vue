@@ -21,7 +21,7 @@
     padding-top: 4px;
     }
     .logo {  align-self: flex-start; /* Align the left element to the start (left) */ 
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: Bold;
     color: #090909;
     }
@@ -43,9 +43,11 @@
     height: 45px;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
-    /* transition: all .3s; */
+    transition: all .05s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     }
     .right-element {   
       display: flex;
