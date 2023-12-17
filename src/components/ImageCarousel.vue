@@ -148,4 +148,9 @@ img {
 @media only screen and (max-width: 768px) {
   h1 { margin-bottom: 30px;}
   }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
 </style>
