@@ -197,12 +197,13 @@ ul {
   margin-bottom: 30px; 
 }
 
-h1 { color: #242424; font-size: 3rem; font-weight: bold; margin-bottom: 60px; text-align: center; line-height: 1 !important;}
+h1 { color: #242424; font-size: 3rem; font-weight: bold; margin-bottom: 60px; text-align: left; line-height: 1 !important;}
 h2 { color: #242424; font-size: 2rem;font-weight: bold;margin-bottom: 30px;line-height: 1.4;  }
 li {
   margin-bottom: 10px;
   color: #090909; 
   font-size: 1.5rem;
+  margin-left: -20px;
 }
 p { margin: 5px 0; }
 

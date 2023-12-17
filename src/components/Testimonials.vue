@@ -182,4 +182,9 @@ button:disabled {
   cursor: not-allowed;
 }
 
+@media only screen and (max-width: 767px) {
+
+    .buy-cta { margin-left: 0;}
+    }
+
 </style>
