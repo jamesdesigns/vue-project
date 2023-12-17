@@ -1,7 +1,7 @@
 <template>
   <div class="test-container">
     <div v-if="currentQuestionIndex < questions.length">
-      <h1>Test your knowledge</h1>
+      <h1>Test your knowledge and skills.</h1>
       <div class="slide">
         <h2>{{ questions[currentQuestionIndex].text }}</h2>
         <ul>

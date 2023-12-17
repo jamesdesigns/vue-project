@@ -71,6 +71,10 @@ h3 { color: #242424; text-align: center; font-size: 2rem; font-weight: bold; mar
   height: 70vh;
 }
 
+.testimonial {
+  box-shadow: 7px 7px 13px #b0b0b0;
+}
+
 .player__btn {
   cursor: pointer;
   border-radius: 50%;
