@@ -68,7 +68,7 @@ h3 { color: #242424; text-align: center; font-size: 2rem; font-weight: bold; mar
   position: relative;
   max-width: 850px;
   margin: 0 auto;
-  height: 70vh;
+  height: 100vh;
 }
 
 .testimonial {
@@ -141,7 +141,7 @@ h3 { color: #242424; text-align: center; font-size: 2rem; font-weight: bold; mar
   width: 200px;
   margin-top: 15px;
   text-align: center;
-  margin: 3% auto 0;
+  margin: 0 auto;
 }
 
 .arrow {
@@ -162,10 +162,12 @@ h3 { color: #242424; text-align: center; font-size: 2rem; font-weight: bold; mar
 
 .left {
   left: 350px;
+  margin-top: 0;
 }
 
 .right {
   right: 350px;
+  margin-top: 0;
 }
 
 button {
@@ -185,6 +187,21 @@ button:disabled {
 @media only screen and (max-width: 767px) {
 
     .buy-cta { margin-left: 0;}
+    }
+
+    .slider-controls {
+      position: relative;
+      margin-top: 10%;
+    }
+
+    .left {
+      left: 30px;
+      margin-top: 5%;
+    }
+
+    .right {
+      right:30px;
+      margin-top: 5%;
     }
 
 </style>
