@@ -1,23 +1,39 @@
 <template>
-  <div class="contact-container">
-    <form @submit.prevent="submitForm" class="contact-form">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="formData.name" required />
-      </div>
+  <div class="neumorphic-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        v-model="formData.name"
+        type="text"
+        id="name"
+        class="input-field"
+        placeholder="Enter your name"
+      />
+    </div>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="formData.email" required />
-      </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        v-model="formData.email"
+        type="email"
+        id="email"
+        class="input-field"
+        placeholder="Enter your email"
+      />
+    </div>
 
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" v-model="formData.message" required></textarea>
-      </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea
+        v-model="formData.message"
+        id="message"
+        class="input-field"
+        rows="4"
+        placeholder="Enter your message"
+      ></textarea>
+    </div>
 
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
+    <button @click="submitForm" class="submit-button">Submit</button>
   </div>
 </template>
 
@@ -26,30 +42,28 @@ export default {
   data() {
     return {
       formData: {
-        name: "",
-        email: "",
-        message: "",
+        name: '',
+        email: '',
+        message: '',
       },
     };
   },
   methods: {
     submitForm() {
       // Handle form submission logic here
-      console.log("Form submitted with data:", this.formData);
-      // You can send the form data to your backend or perform other actions here
+      console.log('Form submitted:', this.formData);
     },
   },
 };
 </script>
 
 <style scoped>
-h1 { color: #242424; }
-.contact-container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.contact-form {
+.neumorphic-form {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 10px 10px 20px #cbcbcb, -10px -10px 20px #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -58,29 +72,21 @@ h1 { color: #242424; }
   margin-bottom: 15px;
 }
 
-label {
-  font-weight: bold;
+.input-field {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 10px #cbcbcb, inset -6px -6px 10px #ffffff;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.submit-btn {
+.submit-button {
   background-color: #3498db;
   color: #fff;
   padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #2980b9;
+  box-shadow: 6px 6px 10px #3498db, -6px -6px 10px #80bfff;
 }
 </style>
+
